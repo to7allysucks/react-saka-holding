@@ -1,0 +1,28 @@
+@use 'reset';
+@use 'fonts';
+@use 'vars';
+@use 'mixins';
+
+body {
+//   font-size: 16px;
+}
+
+// main {
+
+// }
+
+// header {
+
+// }
+
+div {
+    font-size: 100px;
+}
+
+header,main,footer {
+  opacity: 1;
+}
+
+a {
+//   color: vars.$color-black; --color links
+}

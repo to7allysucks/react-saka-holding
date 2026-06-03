@@ -1,4 +1,4 @@
-import HomePage from '../Pages/HomePage/ui/HomePage'
+import HomePage from '../pages/home/ui/HomePage'
 import './styles'
 
 function App() {

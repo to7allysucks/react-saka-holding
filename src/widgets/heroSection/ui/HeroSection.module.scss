@@ -1,0 +1,49 @@
+@import '../../../App/styles/vars.scss';
+
+.heroWrapper {
+    padding-inline: 120px;
+}
+
+.slider {
+        border-radius: 16px;
+        height: 500px;
+    }
+
+.slide {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 70px 100px 0 100px;
+    position: relative;
+        > img {
+        position: absolute;
+        overflow: visible;
+        right: 0px;
+        top: -100px;
+        scale: 1.1;
+        }
+}
+
+.btnHero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 30px;
+    max-width: 260px;
+    > img {
+        margin-left: 70px;
+    }
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sliderPagination {
+    display: block;
+    width: 100%;
+    color: black;
+}

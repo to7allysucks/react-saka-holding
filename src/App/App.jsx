@@ -1,10 +1,11 @@
+import HomePage from '../Pages/HomePage/ui/HomePage'
 import './styles'
 
 function App() {
 
   return (
     <>
-      <div>...</div>
+      <HomePage />
     </>
   )
 }

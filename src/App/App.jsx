@@ -1,11 +1,11 @@
-import HomePage from '../Pages/HomePage/ui/HomePage'
 import './styles'
+import { AppRouter } from './providers/RouterProvider'
 
 function App() {
 
   return (
     <>
-      <HomePage />
+      <AppRouter />
     </>
   )
 }

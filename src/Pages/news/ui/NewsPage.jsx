@@ -1,10 +1,10 @@
-import styles from './HomePage.module.scss'
+import styles from './NewsPage.module.scss'
+import { AppRouter } from '../../../App/providers/RouterProvider'
+
 
 const NewsPage = () => {
     return (
-        <div className={styles.news}>
-            Home
-        </div>
+        <AppRouter />
     )
 }
 

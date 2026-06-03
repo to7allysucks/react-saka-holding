@@ -4,20 +4,13 @@
 @use 'mixins';
 
 body {
-//   font-size: 16px;
+  font-size: 16px;
 }
 
-// main {
-
-// }
-
-// header {
-
-// }
-
-div {
-    font-size: 100px;
+main {
+  padding-inline: 120px;
 }
+
 
 header,main,footer {
   opacity: 1;

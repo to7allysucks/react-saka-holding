@@ -1,6 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ROUTES } from "../../shared/config/routes";
-import HomePage from "../../Pages/HomePage/ui/HomePage";
+import Header from "../../widgets/header/ui/Header";
+import Footer from "../../widgets/footer";
+import HomePage from "../../Pages/HomePage";
+import CatalogPage from "../../Pages/catalog";
+import NewsPage from "../../Pages/news";
+
 const Layout = ({children}) => {
   return (
     <>
@@ -14,6 +19,12 @@ const Layout = ({children}) => {
 const router = createBrowserRouter([
   {
     path: ROUTES.HOME, element: <Layout><HomePage /></Layout>
+  },
+  {
+    path: ROUTES.CATALOG, element: <Layout><CatalogPage /></Layout>
+  },
+  {
+    path: ROUTES.NEWS, element: <Layout><NewsPage /></Layout>
   },
 ])
 

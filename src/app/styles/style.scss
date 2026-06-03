@@ -1,22 +1,11 @@
-@use 'reset';
-@use 'fonts';
-@use 'vars';
-@use 'mixins';
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
 
 body {
-//   font-size: 16px;
-}
-
-// main {
-
-// }
-
-// header {
-
-// }
-
-div {
-    font-size: 100px;
+  font-size: 16px;
+  color: $color-light;
 }
 
 header,main,footer {

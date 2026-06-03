@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ROUTES } from "../../shared/config/routes";
-import HomePage from "../../Pages/HomePage/ui/HomePage";
+import { ROUTES } from "../../shared/config/routes"
+import HomePage from "../../pages/home/ui/HomePage";
+import Header from "../../widgets/header/ui/Header";
 const Layout = ({children}) => {
   return (
     <>
       <Header />
       <main>{children}</main>
-      <Footer />
     </>
     )
 }

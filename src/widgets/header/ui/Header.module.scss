@@ -1,2 +1,19 @@
-@use '../../../app/styles/vars';
-@use '../../../app/styles/mixins';
+@import '../../../app/styles/vars';
+@import '../../../app/styles/mixins';
+
+.header {
+    background-color: $color-accent;
+
+    .headerInner {
+        padding: 26px 120px;
+    }
+
+    .headerNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        background-color: $color-tertiary;
+        padding: 26px 120px;
+        font-size: 14px;
+    }
+}

@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ROUTES } from "../../shared/config/routes"
 import HomePage from "../../pages/home/ui/HomePage";
 import Header from "../../widgets/header/ui/Header";
+import { ROUTES } from "../../shared/config/routes";
+import Header from "../../widgets/header/ui/Header";
+
 const Layout = ({children}) => {
   return (
     <>

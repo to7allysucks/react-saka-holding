@@ -1,49 +1,100 @@
 @import '../../../App/styles/vars.scss';
 
+
 .heroWrapper {
-    padding-inline: 120px;
+  padding-inline: 120px;
+  position: relative;
+
+  > img {
+    position: absolute;
+    right: 120px;
+    top: -66px;
+    z-index: 2;
+  }
 }
 
 .slider {
-        border-radius: 16px;
-        height: 500px;
-    }
+  height: 460px;
+  border-radius: 16px;
+}
 
 .slide {
-    display: flex !important;
-    justify-content: space-between;
-    padding: 70px 100px 0 100px;
-    position: relative;
-        > img {
-        position: absolute;
-        overflow: visible;
-        right: 0px;
-        top: -100px;
-        scale: 1.1;
-        }
-}
-
-.btnHero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 700;
-    border-radius: 30px;
-    max-width: 260px;
-    > img {
-        margin-left: 70px;
-    }
-}
-
-.content {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex !important;
+  overflow: visible;
+  justify-content: space-between;
+  padding: 70px 100px 0 100px;
+  position: relative;
 }
 
 .sliderPagination {
-    display: block;
-    width: 100%;
-    color: black;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+:global(.swiper-pagination-bullet) {
+  background: rgba(255, 255, 255, .16);
+  margin: 0 !important;
+  opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  width: 30px !important;
+  height: 8px !important;
+  border-radius: 4px !important;
+  background: $color-green !important;
+  transition: 0.2s width linear;
+}
+
+.paginationWrapper {
+  z-index: 10;
+  position: absolute;
+  top: 400px;
+  left: 225px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.counter {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.btnHero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 30px;
+  max-width: 260px;
+
+  > img {
+    margin-left: 70px;
+  }
+
+  &:hover {
+    > img {
+      animation: arrowAnimation 0.4s infinite alternate ease;
+    }
+  }
+}
+
+@keyframes arrowAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transition: all linear 0.2s;
+    transform: translateX(10px);
+  }
+
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }

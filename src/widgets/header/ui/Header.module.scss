@@ -15,5 +15,13 @@
         background-color: $color-tertiary;
         padding: 26px 120px;
         font-size: 14px;
+
+        .navItem {
+            transition-duration: $transition-duration-default;
+            
+            &:hover {
+                color: darken($color-light, 20%);
+            }
+        }
     }
 }

@@ -9,25 +9,24 @@ const Header = () => {
             </div>
             <img src="" alt="" />
             <nav className={styles.headerNav}>
-                <a href="">
+                <a href="" className={styles.navItem}>
                     <li>Главная</li>
                 </a>
-                <a href="">
+                <a href="" className={styles.navItem}>
                     <li>Каталог</li>
                 </a>
-                <a href="">
+                <a href="" className={styles.navItem}>
                     <li>О компании</li>
                 </a>
-                <a href="">
+                <a href="" className={styles.navItem}>
                     <li>Новости</li>
                 </a>
-                <a href="">
+                <a href="" className={styles.navItem}>
                     <li>Доставка и оплата</li>
                 </a>
-                <a href="">
+                <a href="" className={styles.navItem}>
                     <li>Контакты</li>
-                </a>    
-
+                </a>
             </nav>
         </header>
         </>

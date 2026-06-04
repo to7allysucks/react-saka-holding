@@ -4,7 +4,6 @@
 .heroWrapper {
   padding-inline: 120px;
   position: relative;
-
   > img {
     position: absolute;
     right: 120px;
@@ -30,9 +29,13 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 150px;
 }
 
 :global(.swiper-pagination-bullet) {
+  width: 30px !important;
+  height: 3px !important;
+  border-radius: 1px !important;
   background: rgba(255, 255, 255, .16);
   margin: 0 !important;
   opacity: 1;
@@ -40,26 +43,34 @@
 
 :global(.swiper-pagination-bullet-active) {
   width: 30px !important;
-  height: 8px !important;
-  border-radius: 4px !important;
+  height: 3px !important;
+  border-radius: 1px !important;
   background: $color-green !important;
   transition: 0.2s width linear;
 }
 
 .paginationWrapper {
-  z-index: 10;
+  z-index: 3;
   position: absolute;
   top: 400px;
   left: 225px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 25px;
+  width: 100%;
+  max-width: 260px;
 }
 
 .counter {
   color: #fff;
   font-size: 18px;
   letter-spacing: 2px;
+  display: inline;
+
+  & > span {
+    color: rgba(255, 255, 255, .25);
+  }
 }
 
 .btnHero {

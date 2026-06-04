@@ -84,8 +84,10 @@ const HeroSection = () => {
 
         <span className={styles.counter}>
           {String(isActiveSlide + 1).padStart(2, '0')}
-          {' / '}
-          {String(MOCK_SLIDERS.length).padStart(2, '0')}
+          <span>
+            {' / '}
+            {String(MOCK_SLIDERS.length).padStart(2, '0')}
+          </span>
         </span>
       </div>
       <img src={heroImg} alt="heroimg"/>

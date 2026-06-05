@@ -1,0 +1,42 @@
+@import '../../../../app/styles/vars';
+@import '../../../../app/styles/mixins';
+
+.headerNav {
+    display: flex;
+    background-color: $color-tertiary;
+    padding: 26px 180px;
+    font-size: 16px;
+    @include laptop {
+        font-size: 14px;
+        padding: 26px 120px;
+    }
+
+    @include mobile {
+        font-size: 16px;
+    }
+
+    .navItem {
+        transition-duration: $transition-duration-default;
+        
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dropdownMenu {
+    display: none;
+}
+
+.dropdownToggle {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

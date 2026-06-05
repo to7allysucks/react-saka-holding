@@ -1,4 +1,4 @@
-import styles from './greenBtn.module.scss'
+import styles from './GreenBtn.module.scss'
 
 const GreenBtn = (props) => {
     const {type, img, children, className} = props

@@ -1,17 +1,43 @@
-@import 'reset';
-@import 'fonts';
-@import 'vars';
-@import 'mixins';
+@import './vars';
+@import './fonts';
+@import './mixins';
+@import './reset';
+
+* {
+  color: $color-light;
+}
 
 body {
   font-size: 16px;
-  color: $color-light;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: $color-white;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: $color-black;
+}
+
+h5 {
+  font-size: 18px;
+  color: $color-white;
+}
+
+main{
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 header,main,footer {
   opacity: 1;
 }
 
-button {
-  color: inherit;
+span {
+  font-size: 12px;
+  color: rgba($color: #ffffff, $alpha: 0.5);
 }

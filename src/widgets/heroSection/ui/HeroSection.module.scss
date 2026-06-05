@@ -1,5 +1,15 @@
-@import '../../../App/styles/vars.scss';
-@import '../../../App//styles/mixins.scss';
+@import '../../../app/styles/vars.scss';
+@import '../../../app/styles/mixins.scss';
+
+.button {
+  background-color: $color-green;
+  border-radius: 50%;
+  border: 0;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 20px 30px;
+  color: $color-black;
+}
 
 .heroWrapper {
   padding-inline: 120px;

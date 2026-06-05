@@ -6,6 +6,7 @@
     background-color: $color-tertiary;
     padding: 26px 180px;
     font-size: 16px;
+    
     @include laptop {
         font-size: 14px;
         padding: 26px 120px;

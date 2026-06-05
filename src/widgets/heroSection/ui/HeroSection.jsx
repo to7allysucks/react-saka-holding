@@ -73,7 +73,7 @@ const HeroSection = () => {
                        style={{background: `linear-gradient(-45deg, ${slide.bgLeft} 50%, ${slide.bgRight} 50%)`}}>
             <div className={styles.content}>
               <h2>Здесь будет слайдер с различными акциями или <span>специальными предложениями</span></h2>
-              <GreenBtn type='button' img={arrowImg} className={styles.btnHero}>Подробнее</GreenBtn>
+              <GreenBtn type='button' img={arrowImg} className={`${styles.btnHero}, ${styles.button}`}>Подробнее</GreenBtn>
             </div>
           </SwiperSlide>
         ))}

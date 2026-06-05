@@ -1,0 +1,12 @@
+@import '../../../App/styles/vars.scss';
+
+.container {
+    display: block;
+    align-items: center;
+    text-align: center;
+    // padding-inline: 120px;
+    
+    & > h3 {
+        margin-bottom: 30px;
+    }
+}

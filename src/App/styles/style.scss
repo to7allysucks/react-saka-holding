@@ -1,0 +1,58 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+
+* {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: $color-white;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: $color-black;
+}
+
+h5 {
+  font-size: 18px;
+  color: $color-white;
+}
+
+main{
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+header,main,footer {
+  opacity: 1;
+}
+
+a {
+//   color: vars.$color-black; --color links
+}
+
+span {
+  font-size: 12px;
+  color: rgba($color: #ffffff, $alpha: 0.5);
+}
+
+button {
+  background-color: $color-green;
+  border-radius: 50%;
+  border: 0;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 20px 30px;
+  color: $color-black;
+}
+

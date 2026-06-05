@@ -3,7 +3,7 @@ import styles from './Header.module.scss'
 const Header = () => {
     return (
         <header>
-            Header
+            Здесь был бог майнкрафта
         </header>
     )
 }

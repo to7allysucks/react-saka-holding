@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { useRef, useState } from 'react';
+import 'swiper/css'
 import styles from "./Slider.module.scss";
 import arrowImg from '../../../shared/assets/icons/strelka_hero-slider.svg'
 
@@ -26,8 +27,15 @@ const Slider = (props) => {
                 className={styles.slider}
                 onSwiper={ (swiper) => (swiperRef.current = swiper)}
                 onInit={(swiper) => setSwiperInstance(swiper)}
-                slidesPerView={3}
-                spaceBetween={40}            
+                spaceBetween={40}
+                breakpoints={{
+                    0: {                   
+                    slidesPerView: 1,
+                    },
+                    960: {             
+                    slidesPerView: 3,
+                    }
+                }}
             >
                 {content.map(certif => (
                         <SwiperSlide className={styles.slide}>

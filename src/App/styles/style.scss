@@ -3,6 +3,10 @@
 @import 'vars';
 @import 'mixins';
 
+* {
+  font-size: 16px;
+}
+
 body {
   font-size: 16px;
 }
@@ -19,6 +23,11 @@ h3 {
   color: $color-black;
 }
 
+h5 {
+  font-size: 18px;
+  color: $color-white;
+}
+
 main{
   max-width: 1400px;
   margin-inline: auto;
@@ -33,7 +42,8 @@ a {
 }
 
 span {
-
+  font-size: 12px;
+  color: rgba($color: #ffffff, $alpha: 0.5);
 }
 
 button {

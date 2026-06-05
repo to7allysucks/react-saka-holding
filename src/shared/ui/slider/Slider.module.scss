@@ -1,0 +1,40 @@
+@import "../../../App/styles/vars.scss";
+
+.sliderWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    max-width: 1160px;
+}
+
+.slide {
+    height: auto !important;
+    width: auto !important;
+    max-width: 100%;
+    
+    & > img {
+        margin-inline: auto;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.prevElement, .nextElement {
+    display: block;
+    padding: 13px;
+    background-color: $color-grey;
+    border-radius: 50%;
+    align-self: center;
+
+}
+
+
+.prevElement {
+    rotate: 180deg;
+}

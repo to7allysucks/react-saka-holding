@@ -1,0 +1,17 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+
+body {
+  font-size: 16px;
+  color: $color-light;
+}
+
+header,main,footer {
+  opacity: 1;
+}
+
+button {
+  color: inherit;
+}

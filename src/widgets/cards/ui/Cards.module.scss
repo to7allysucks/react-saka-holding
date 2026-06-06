@@ -1,0 +1,225 @@
+@import '../../../App/styles/vars.scss';
+@import '../../../App/styles/mixins.scss';
+
+.cardsSection {
+    width: 100%;
+    background: #f7f7f7;
+    color: $color-accent;
+    padding: 50px 0 62px;
+}
+
+.container {
+    width: min(100%, 1024px);
+    margin: 0 auto;
+    padding: 0 78px 0 90px;
+}
+
+.title {
+    color: $color-accent;
+    margin-bottom: 22px;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.sliderWrapper {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    height: auto;
+}
+
+.card {
+    width: 100%;
+    height: 318px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: $color-light;
+    transition: border-color $transition-duration-default ease,
+                transform $transition-duration-default ease,
+                box-shadow $transition-duration-default ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 30px rgba(25, 36, 47, 0.08);
+    }
+}
+
+.cardActive {
+    border-color: #1197f5;
+}
+
+.cardImage {
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 17px 21px 14px;
+}
+
+.cardTitle {
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.metaRow {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 13px;
+}
+
+.price {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #17295b;
+}
+
+.length {
+    padding-bottom: 2px;
+    font-size: 9px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #a1a7af;
+}
+
+.moreButton {
+    width: 148px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 18px;
+    border-radius: 999px;
+    background: #dec389;
+    color: $color-accent;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    transition: background $transition-duration-default ease,
+                transform $transition-duration-default ease;
+
+    img {
+        width: 16px;
+        height: 16px;
+        transition: transform $transition-duration-default ease;
+    }
+
+    &:hover {
+        background: #d5b675;
+        transform: translateY(-1px);
+
+        img {
+            transform: translateX(3px);
+        }
+    }
+}
+
+.navButton {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $color-light;
+    box-shadow: 0 8px 20px rgba(25, 36, 47, 0.06);
+    transform: translateY(-50%);
+    transition: transform $transition-duration-default ease,
+                box-shadow $transition-duration-default ease;
+
+    img {
+        width: 18px;
+        height: 18px;
+    }
+
+    &:hover {
+        transform: translateY(-50%) scale(1.06);
+        box-shadow: 0 10px 24px rgba(25, 36, 47, 0.12);
+    }
+}
+
+.prevButton {
+    left: -52px;
+
+    img {
+        transform: rotate(180deg);
+    }
+}
+
+.nextButton {
+    right: -68px;
+}
+
+@include tablet {
+    .cardsSection {
+        padding: 40px 0 52px;
+    }
+
+    .container {
+        padding: 0 44px;
+    }
+
+    .navButton {
+        width: 34px;
+        height: 34px;
+    }
+
+    .prevButton {
+        left: -17px;
+    }
+
+    .nextButton {
+        right: -17px;
+    }
+}
+
+@include mobile {
+    .cardsSection {
+        padding: 32px 0 42px;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .title {
+        margin-bottom: 18px;
+        font-size: 19px;
+    }
+
+    .card {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .navButton {
+        width: 34px;
+        height: 34px;
+        top: calc(50% + 18px);
+    }
+
+    .prevButton {
+        left: -16px;
+    }
+
+    .nextButton {
+        right: -16px;
+    }
+}

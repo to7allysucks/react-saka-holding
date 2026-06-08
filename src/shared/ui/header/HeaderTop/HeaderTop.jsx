@@ -1,5 +1,5 @@
 import styles from './HeaderTop.module.scss'
-import logo from '../../../../shared/assets/icons/saka_holding_logo.svg'
+import logo from '../../../../shared/assets/icons/saka-holding-logo.svg'
 import blackEmblem from '../../../../shared/assets/icons/saka_emblem.svg'
 import orangeEmblem from '../../../../shared/assets/icons/eros_emblem.svg'
 import goldEmblem from '../../../../shared/assets/icons/tortex_emblem.svg'

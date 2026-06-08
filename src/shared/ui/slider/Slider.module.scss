@@ -1,4 +1,4 @@
-@import "../../../app/styles/vars.scss";
+@use '@styles/variables' as v;
 
 .sliderWrapper {
     width: 100%;
@@ -28,7 +28,7 @@
 .prevElement, .nextElement {
     display: block;
     padding: 13px;
-    background-color: $color-grey;
+    background-color: v.$color-grey;
     border-radius: 50%;
     align-self: center;
 

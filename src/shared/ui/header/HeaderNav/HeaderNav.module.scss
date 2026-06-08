@@ -1,26 +1,26 @@
-@import '../../../../app/styles/vars';
-@import '../../../../app/styles/mixins';
+@use '../../../../app/styles/variables' as v;
+@use '@styles/mixins' as m;
 
 .headerNav {
     display: flex;
-    background-color: $color-tertiary;
+    background-color: v.$color-tertiary;
     padding: 26px 180px;
     font-size: 16px;
     
-    @include laptop {
+    @include m.laptop {
         font-size: 14px;
         padding: 26px 120px;
     }
 
-    @include mobile {
+    @include m.mobile {
         font-size: 16px;
     }
 
     .navItem {
-        transition-duration: $transition-duration-default;
+        transition-duration: v.$transition-duration-default;
         
         &:hover {
-            color: $color-secondary;
+            color: v.$color-secondary;
         }
     }
 }

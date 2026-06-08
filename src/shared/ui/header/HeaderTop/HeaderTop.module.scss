@@ -1,5 +1,5 @@
-@import '../../../../app/styles/vars';
-@import '../../../../app/styles/mixins';
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
 
 .leftWrapper {
     display: flex;
@@ -11,16 +11,16 @@
     width: 140px;
     margin-right: 30px;
     
-    @include tablet {
+    @include m.tablet {
         max-width: 120px;
         margin-right: 20px;
     }
 
-    @include mobile {
+    @include m.mobile {
         max-width: 86px;
     }
 
-    @include mobile {
+    @include m.mobile {
         margin-right: 15px;
     }
 }
@@ -33,12 +33,12 @@
     padding: 26px 180px;
     width: 100%;
 
-    @include laptop {
+    @include m.laptop {
         font-size: 12px;
         padding: 18px 120px 28px 120px;
     }
 
-    @include mobile {
+    @include m.mobile {
         padding: 37px 30px;
     }
 }
@@ -52,19 +52,19 @@
         min-width: 60px;
         min-height: 60px;
 
-        @include laptop {
+        @include m.laptop {
             min-width: 48px;
             min-height: 48px;
             
         }
 
-        @include mobile {
+        @include m.mobile {
             min-width: 34px;
             min-height: 34px;
         }
     }
 
-    @include mobile {
+    @include m.mobile {
         gap: 7px;
     }
 }
@@ -73,15 +73,15 @@
     font-weight: 300;
     margin-left: 60px;
 
-    @include laptop {
+    @include m.laptop {
         font-size: 12px;
     }
 
-    @include tablet {
+    @include m.tablet {
         margin-left: 49px;
     }
 
-    @include mobile {
+    @include m.mobile {
         display: none;
     }
 }
@@ -91,7 +91,7 @@
     flex-direction: row;
     gap: 40px;
 
-    @include laptop {
+    @include m.laptop {
         gap: 33px;
     }
 }
@@ -107,11 +107,11 @@
     height: 40px;
     position: relative;
     
-    @include tablet {
+    @include m.tablet {
         display: none;
     }
 
-    @include mobile {
+    @include m.mobile {
         display: none;
     }
 
@@ -123,8 +123,8 @@
         min-height: 16px;
         border: none;
         border-radius: 50%; 
-        background-color: $color-secondary;
-        color: $color-white;
+        background-color: v.$color-secondary;
+        color: v.$color-white;
         text-align: center;
         align-items: center;
         position: absolute;
@@ -139,7 +139,7 @@
     align-items: center;
     gap: 45px;
 
-    @include laptop {
+    @include m.laptop {
         gap: 38px;
     }
 }
@@ -152,7 +152,7 @@
     font-size: 14px;
     font-weight: 500;
 
-    @include laptop;
+    @include m.laptop;
 
     font-size: 12px;
     img {
@@ -180,10 +180,10 @@
     text-decoration: underline 0.5px;
     font-weight: 300;
     text-align: right;
-    transition-duration: $transition-duration-default;
+    transition-duration: v.$transition-duration-default;
 
     &:hover {
-        color: $color-secondary;
+        color: v.$color-secondary;
     }
 }
 
@@ -197,7 +197,7 @@
         font-size: 14px;
         font-weight: 500;
 
-        @include laptop {
+        @include m.laptop {
             font-size: 12px;
         }
     }
@@ -205,5 +205,5 @@
 
 
 .activeTheme {
-    color: $color-white;
+    color: v.$color-white;
 }

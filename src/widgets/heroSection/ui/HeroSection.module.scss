@@ -1,14 +1,14 @@
-@import '../../../app/styles/vars.scss';
-@import '../../../app/styles/mixins.scss';
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
 
 .button {
-  background-color: $color-gold;
+  background-color: v.$color-gold;
   border-radius: 50%;
   border: 0;
   font-size: 16px;
   border-radius: 16px;
   padding: 20px 30px;
-  color: $color-black;
+  color: v.$color-black;
 }
 
 .heroWrapper {
@@ -46,7 +46,7 @@
   width: 30px !important;
   height: 3px !important;
   border-radius: 1px !important;
-  background: rgba(255, 255, 255, .16);
+  background: rgb(255, 255, 255, .16);
   margin: 0 !important;
   opacity: 1;
 }
@@ -55,7 +55,7 @@
   width: 30px !important;
   height: 3px !important;
   border-radius: 1px !important;
-  background: $color-gold !important;
+  background: v.$color-gold !important;
   transition: 0.2s width linear;
 }
 
@@ -79,7 +79,7 @@
   display: inline;
 
   & > span {
-    color: rgba(255, 255, 255, .25);
+    color: rgb(255, 255, 255, .25);
   }
 }
 
@@ -122,7 +122,7 @@
 }
 
 
-@include tablet() {
+@include m.tablet {
   .heroWrapper {
     padding-inline: 40px;
      > img {
@@ -140,7 +140,7 @@
       font-size: 3vw;
 
       & > span {
-        color: $color-gold;
+        color: v.$color-gold;
       }
     }
   }
@@ -175,7 +175,7 @@
 
 }
 
-@include mobile {
+@include m.mobile {
   .heroWrapper {
     padding-inline: 30px;
      > img {
@@ -195,7 +195,7 @@
       font-size: 18px;
 
       & > span {
-        color: $color-gold;
+        color: v.$color-gold;
       }
     }
   }

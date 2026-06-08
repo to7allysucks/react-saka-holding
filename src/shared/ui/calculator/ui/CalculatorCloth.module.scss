@@ -1,4 +1,4 @@
-@import '../../../../app/styles/vars.scss';
+@use '@styles/variables' as v;
 
 .container {
     display: flex;
@@ -7,7 +7,7 @@
     width: 100%;
     max-width: 1160px;
     align-items: center;
-    background-color: $color-accent;
+    background-color: v.$color-accent;
     padding: 40px 60px 40px 60px;
     border-radius: 16px;
 }
@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: $color-blue-light;
+    background-color: v.$color-blue-light;
     padding: 30px 40px;
     border-radius: 16px;
 }
@@ -38,34 +38,34 @@
         padding: 15px;
         border-radius: 16px;
         position: relative;
-        background-color: rgba($color-white, 0.05);
+        background-color: rgb(v.$color-white, 0.05);
     }
 }
 
 .decrement {
     display: block;
-    border: 2px solid $color-white;
+    border: 2px solid v.$color-white;
     border-radius: 2px;
     margin-block: 8px;
     width: 22px;
-    background-color: $color-white;
+    background-color: v.$color-white;
 }
 
 .increment {
     display: block;
-    border: 2px solid $color-white;
+    border: 2px solid v.$color-white;
     border-radius: 2px;
     margin-block: 8px;
     width: 22px;
-    background-color: $color-white;
+    background-color: v.$color-white;
 
     &::after {
         content: '';
         display: block;
         position: absolute;
         width: 22px;
-        background-color: $color-white;
-        border: 2px solid $color-white;
+        background-color: v.$color-white;
+        border: 2px solid v.$color-white;
         border-radius: 2px;
         rotate: 90deg;
         top: 23px;
@@ -75,13 +75,13 @@
 
 .clothWatchCounter {
     padding: 20px 40px;
-    background-color: rgba($color-white, 0.05);
-    color: $color-accent;
+    background-color: rgb(v.$color-white, 0.05);
+    color: v.$color-accent;
     border-radius: 16px;
     width: 100%;
     max-width: 256px;
     outline: none;
-    color: $color-white;
+    color: v.$color-white;
 }
 
 .enterParamsContainer {
@@ -98,7 +98,7 @@
     width: 359px;
     height: 359px;
     align-items: center;
-    background-color: $color-accent;
+    background-color: v.$color-accent;
     border-radius: 16px;
 }
 
@@ -109,12 +109,12 @@
 }
 
 .clothSelector {
-    background-color: rgba($color-white, 0.05);
+    background-color: rgb(v.$color-white, 0.05);
     background-image: url('../../../../shared/assets/icons/arrow_katalog.svg');
     background-repeat: no-repeat;
     background-position: center right 20px;
     padding: 20px;
-    color: rgba($color-white, 0.5);
+    color: rgb(v.$color-white, 0.5);
     padding-right: 20px;
     border-radius: 16px;
     appearance: none;
@@ -124,6 +124,6 @@
 .clothOption {
     padding: 20px;
     border-radius: 16px;
-    background-color: $color-accent;
+    background-color: v.$color-accent;
     border: 0;
 }

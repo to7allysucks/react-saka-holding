@@ -2,7 +2,7 @@
 @import '../../../app/styles/mixins.scss';
 
 .button {
-  background-color: $color-green;
+  background-color: $color-gold;
   border-radius: 50%;
   border: 0;
   font-size: 16px;
@@ -55,7 +55,7 @@
   width: 30px !important;
   height: 3px !important;
   border-radius: 1px !important;
-  background: $color-green !important;
+  background: $color-gold !important;
   transition: 0.2s width linear;
 }
 
@@ -140,7 +140,7 @@
       font-size: 3vw;
 
       & > span {
-        color: $color-green;
+        color: $color-gold;
       }
     }
   }
@@ -195,7 +195,7 @@
       font-size: 18px;
 
       & > span {
-        color: $color-green;
+        color: $color-gold;
       }
     }
   }

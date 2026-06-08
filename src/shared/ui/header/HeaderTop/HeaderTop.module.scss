@@ -124,7 +124,7 @@
         border: none;
         border-radius: 50%; 
         background-color: $color-secondary;
-        color: $color-light;
+        color: $color-white;
         text-align: center;
         align-items: center;
         position: absolute;
@@ -205,5 +205,5 @@
 
 
 .activeTheme {
-    color: $color-light;
+    color: $color-white;
 }

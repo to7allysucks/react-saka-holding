@@ -1,13 +1,14 @@
 @import '../../../../app/styles/vars.scss';
 
-
 .container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 1160px;
     align-items: center;
     background-color: $color-blue-dark;
-    padding: 40px 60px 70px 60px;
+    padding: 40px 60px 40px 60px;
     border-radius: 16px;
 }
 
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     background-color: $color-blue-light;
     padding: 30px 40px;
     border-radius: 16px;
@@ -31,4 +33,97 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & > button {
+        padding: 15px;
+        border-radius: 16px;
+        position: relative;
+        background-color: rgba($color-white, 0.05);
+    }
+}
+
+.decrement {
+    display: block;
+    border: 2px solid $color-white;
+    border-radius: 2px;
+    margin-block: 8px;
+    width: 22px;
+    background-color: $color-white;
+}
+
+.increment {
+    display: block;
+    border: 2px solid $color-white;
+    border-radius: 2px;
+    margin-block: 8px;
+    width: 22px;
+    background-color: $color-white;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 22px;
+        background-color: $color-white;
+        border: 2px solid $color-white;
+        border-radius: 2px;
+        rotate: 90deg;
+        top: 23px;
+        right: 15px;
+    }
+}
+
+.clothWatchCounter {
+    padding: 20px 40px;
+    background-color: rgba($color-white, 0.05);
+    color: $color-accent;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 256px;
+    outline: none;
+    color: $color-white;
+}
+
+.enterParamsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-self: flex-start;
+}
+
+
+.clothWrapper {
+    display: flex;
+    justify-content: center;
+    width: 359px;
+    height: 359px;
+    align-items: center;
+    background-color: $color-accent;
+    border-radius: 16px;
+}
+
+.variants {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.clothSelector {
+    background-color: rgba($color-white, 0.05);
+    background-image: url('../../../../shared/assets/icons/arrow_katalog.svg');
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    padding: 20px;
+    color: rgba($color-white, 0.5);
+    padding-right: 20px;
+    border-radius: 16px;
+    appearance: none;
+    outline: 0;
+}
+
+.clothOption {
+    padding: 20px;
+    border-radius: 16px;
+    background-color: $color-accent;
+    border: 0;
 }

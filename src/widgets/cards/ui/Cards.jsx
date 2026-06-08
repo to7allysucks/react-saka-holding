@@ -1,5 +1,5 @@
 import styles from "./Cards.module.scss";
-import cardImage from "./card-image.png";
+import cardImage from "../../../shared/assets/images/cloth-Slider/blue_cloth.svg";
 
 const Cards = ({
   title = "Кулинарная гладь",
@@ -11,7 +11,7 @@ const Cards = ({
     <article className={styles.card}>
       <img
         className={styles.image}
-        src={image}
+        src={image} оценка
         alt={title}
       />
 
@@ -26,7 +26,7 @@ const Cards = ({
         <button className={styles.button} type="button">
           <span>Подробнее</span>
           <span className={styles.arrow} aria-hidden="true">
-            →
+            <img></img>
           </span>
         </button>
       </div>

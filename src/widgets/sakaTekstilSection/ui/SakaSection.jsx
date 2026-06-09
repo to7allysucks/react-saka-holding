@@ -1,0 +1,53 @@
+import styles from "./SakaSection.module.scss";
+import sakaImage from "../../../shared/assets/images/saka-tekstil/saka-tekstil.svg";
+import GreenBtn from "../../../shared/ui/buttons/greenBtn/GreenBtn";
+
+const advantages = [
+  <>
+    Предоставляем возможность закупки широкого ассортимента: фуктер,
+    кулирка, джаккард, флис, рибана и многое другое...
+  </>,
+  <>
+    Наша компания является надежным поставщиком и производителем турецкого
+    трикотажного полотна по всему миру
+  </>,
+];
+
+const SakaSection = () => {
+  return (
+    <section className={styles.section}>
+      <div className={styles.imageWrapper}>
+        <img className={styles.image} src={sakaImage} alt="Здание компании Saka Tekstil"/>
+      </div>
+
+      <div className={styles.content}>
+        <h2 className={styles.title}>
+          Saka Tekstil – для тех, кто хочет быстро
+          <br />
+          и комфортно получать текстильную
+          <br />
+          продукцию{" "}
+          <span className={styles.titleAccent}>
+            высокого качества
+            <br />
+            по адекватной стоимости
+          </span>
+        </h2>
+
+        <ul className={styles.advantages}>
+          {advantages.map((advantage, index) => (
+            <li className={styles.advantage} key={index}>
+              <span className={styles.line} aria-hidden="true" />
+
+              <p className={styles.text}>{advantage}</p>
+            </li>
+          ))}
+        </ul>
+
+        <GreenBtn type='button' href="#catalog" text='Смотреть каталог'></GreenBtn>
+      </div>
+    </section>
+  );
+};
+
+export default SakaSection;

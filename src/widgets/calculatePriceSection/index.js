@@ -1,1 +1,1 @@
-import { default } from './ui/CalculatePriceSection'
+import CalculatePriceSection from './ui/CalculatePriceSection'

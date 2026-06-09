@@ -1,5 +1,6 @@
 @use '@styles/variables' as v;
 @use '@styles/mixins' as m;
+@use '@styles/functions' as f;
 
 .newsCard {
   position: relative;
@@ -78,7 +79,7 @@
 .title {
   margin: 0;
   font-family: v.$font-main;
-  font-size: 20px;
+  font-size: f.to-rem(20);
   font-weight: 600;
   line-height: 1.4;
   color: #ffffff;
@@ -86,7 +87,7 @@
 
 .description {
   margin: 0;
-  font-size: 14px;
+  font-size: f.to-rem(14);
   line-height: 1.5;
   
   display: -webkit-box;
@@ -98,7 +99,7 @@
 .date {
   margin-top: auto;
   font-family: v.$font-main;
-  font-size: 12px;
+  font-size: f.to-rem(12);
   font-weight: 500;
   letter-spacing: 0.5px;
 }

@@ -1,6 +1,6 @@
 @use '@styles/variables' as v;
 @use '@styles/mixins' as m;
-
+@use '@styles/functions' as f;
 
 
 .heroWrapper {
@@ -21,7 +21,7 @@
 
 .accentInfo {
   color: v.$color-gold;
-  font-size: 32px;
+  font-size: f.to-rem(32);
 }
 
 .slider {
@@ -80,7 +80,7 @@
 
 .counter {
   color: #fff;
-  font-size: 18px;
+  font-size: f.to-rem(18);
   letter-spacing: 2px;
   display: inline;
   min-width: 50px;
@@ -200,11 +200,11 @@
     gap: 30px;
     
     & > h2 {
-      font-size: 18px;
+      font-size: f.to-rem(18);
 
       & > span {
         color: v.$color-gold;
-        font-size: 18px;
+        font-size: f.to-rem(18);
       }
     }
   }
@@ -220,7 +220,7 @@
   .btnHero {
     width: 100%;
     padding: 20px 30px;
-    font-size: 18px;
+    font-size: f.to-rem(18);
     display: flex;
     justify-content: space-between;
     align-items: center;

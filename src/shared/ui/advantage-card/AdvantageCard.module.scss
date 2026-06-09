@@ -1,5 +1,6 @@
-@use '../../../app/styles/variables' as v;
+@use '@styles/variables' as v;
 @use '@styles/mixins' as m;
+@use '@styles/functions' as f;
 
 .advantageCard {
     display: flex;
@@ -21,7 +22,7 @@
         line-height: 150%;
         
         @include m.laptop {
-            font-size: 14px;
+            font-size: f.to-rem(14);
         }
     }
 
@@ -30,10 +31,10 @@
         max-width: 220px;
         color: v.$color-black;
         line-height: 150%;
-        font-size: 16px;
+        font-size: f.to-rem(16);
 
         @include m.laptop {
-            font-size: 14px;
+            font-size: f.to-rem(14);
         }
 
         @include m.tablet {

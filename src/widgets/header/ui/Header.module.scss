@@ -1,8 +1,9 @@
 @use '@styles/variables' as v;
 @use '@styles/mixins' as m;
+@use '@styles/functions' as f;
 
 .header {
     width: 100%;
-    font-size: 16px;
+    font-size: f.to-rem(16);
     background-color: v.$color-accent;
 }

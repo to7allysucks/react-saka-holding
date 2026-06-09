@@ -1,5 +1,7 @@
-@use '../../../app/styles/variables' as v;
-@use '../../../app/styles/mixins' as m;
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
+@use '@styles/functions' as f;
+
 
 .btnReview {
     background-color: v.$color-grey;
@@ -28,7 +30,7 @@
 
     & > p {
         color: v.$color-accent;
-        font-size: 12px;
+        font-size: f.to-rem(12);
         font-weight: 400;
         letter-spacing: 2%;
         line-height: 165%;

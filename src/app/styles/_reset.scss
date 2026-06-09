@@ -1,5 +1,7 @@
+@use './variables';
+
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: variables.$font-main;
     padding: 0px;
     margin: 0px;
     border: none;

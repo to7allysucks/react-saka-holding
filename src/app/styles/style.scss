@@ -2,31 +2,32 @@
 @use './reset';
 @use './mixins';
 @use './fonts';
+@use './functions';
 
 * {
   color: variables.$color-white;
-  font-size: 16px;
+  font-size: functions.to-rem(16);
 }
 
 h2 {
-  font-size: 32px;
+  font-size: functions.to-rem(32);
   font-weight: 600;
   color: variables.$color-white;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: functions.to-rem(26);
   font-weight: 600;
   color: variables.$color-black;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: functions.to-rem(18);
   color: variables.$color-white;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: functions.to-rem(16);
   color: variables.$color-black;
   font-weight: 700;
 }
@@ -41,6 +42,6 @@ header,main,footer {
 }
 
 span {
-  font-size: 12px;
+  font-size: functions.to-rem(12);
   color: rgb($color: #ffffff, $alpha: 0.5);
 }

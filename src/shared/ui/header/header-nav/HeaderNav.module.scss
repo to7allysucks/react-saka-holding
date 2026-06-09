@@ -1,19 +1,20 @@
 @use '@styles/variables' as v;
 @use '@styles/mixins' as m;
+@use '@styles/functions' as f;
 
 .headerNav {
     display: flex;
     background-color: v.$color-tertiary;
     padding: 26px 180px;
-    font-size: 16px;
+    font-size: f.to-rem(16);
     
     @include m.laptop {
-        font-size: 14px;
+        font-size: f.to-rem(14);
         padding: 26px 120px;
     }
 
     @include m.mobile {
-        font-size: 16px;
+        font-size: f.to-rem(16);
     }
 
     .navItem {

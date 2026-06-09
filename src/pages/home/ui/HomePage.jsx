@@ -3,8 +3,10 @@ import Certificates from '../../../widgets/certificatesSection/ui/Certificates'
 import HeroSection from '../../../widgets/heroSection/ui/HeroSection'
 import Cards from '../../../widgets/cards/ui/Cards'
 import SakaSection from '../../../widgets/sakaTekstilSection/ui/SakaSection'
+import Card from '../../../shared/ui/card/ui/Card' 
 import styles from './HomePage.module.scss'
 import PlacesSection from '../../../widgets/PlacesSection/ui/PlacesSection'
+import CardsSection from '../../../widgets/CardsSection/ui/CardsSection'
 
 const HomePage = () => {
     return (
@@ -13,9 +15,9 @@ const HomePage = () => {
             <NewsCard />
             <SakaSection />
             <Certificates />
-            <Cards />
             <CalculatePriceSection />
             <PlacesSection />
+            <CardsSection />
         </div>
     )
 }

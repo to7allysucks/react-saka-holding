@@ -1,11 +1,15 @@
 @use '../../../../app/styles/variables' as v;
 
 .button {
+  display: flex;
+  justify-content: space-between;
   background-color: v.$color-gold;
-  border-radius: 50%;
+  border-radius: 100px;
   border: 0;
   font-size: 16px;
-  border-radius: 16px;
   padding: 20px 30px;
-  color: v.$color-black;
+  max-width: 260px;
+  color: v.$color-accent;
+  align-items: center;
+  font-weight: 700;
 }

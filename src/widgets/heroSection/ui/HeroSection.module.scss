@@ -19,6 +19,11 @@
   }
 }
 
+.accentInfo {
+  color: v.$color-gold;
+  font-size: 32px;
+}
+
 .slider {
   height: 460px;
   border-radius: 16px;
@@ -69,11 +74,16 @@
   max-width: 300px;
 }
 
+.btnHero {
+  height: 60px;
+}
+
 .counter {
   color: #fff;
   font-size: 18px;
   letter-spacing: 2px;
   display: inline;
+  min-width: 50px;
 
   & > span {
     color: rgb(255, 255, 255, .25);
@@ -138,6 +148,7 @@
 
       & > span {
         color: v.$color-gold;
+        font-size: 3vw;
       }
     }
   }
@@ -193,6 +204,7 @@
 
       & > span {
         color: v.$color-gold;
+        font-size: 18px;
       }
     }
   }

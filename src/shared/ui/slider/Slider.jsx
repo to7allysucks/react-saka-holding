@@ -6,9 +6,10 @@ import arrowImg from '../../../shared/assets/icons/strelka_hero-slider.svg'
 
 const Slider = (props) => {
     const {
-        content
+        children,
+        params = {},
+        className
     } = props
-
     
 
     const swiperRef = useRef(null)
@@ -18,7 +19,7 @@ const Slider = (props) => {
     return (
         <div className={styles.sliderWrapper}>
             <button 
-                className={styles.prevElement}
+                className={`${styles.prevElement} ${className}`}
                 onClick={() => swiperInstance?.slidePrev()}
                 >
                 <img src={arrowImg} alt="prev" />
@@ -27,24 +28,12 @@ const Slider = (props) => {
                 className={styles.slider}
                 onSwiper={ (swiper) => (swiperRef.current = swiper)}
                 onInit={(swiper) => setSwiperInstance(swiper)}
-                spaceBetween={40}
-                breakpoints={{
-                    0: {                   
-                    slidesPerView: 1,
-                    },
-                    960: {             
-                    slidesPerView: 3,
-                    }
-                }}
+                breakpoints={params.breakpoints}
             >
-                {content.map(certif => (
-                        <SwiperSlide className={styles.slide}>
-                            <img src={certif.url} alt="certif" key={certif.key} />
-                        </SwiperSlide> 
-                ))}
+                {children}
             </Swiper>
             <button 
-                className={styles.nextElement}
+                className={`${styles.nextElement} ${className}`}
                 onClick={() => swiperInstance?.slideNext()}
                 >
                 <img src={arrowImg} alt="next" />

@@ -7,6 +7,10 @@ import orangeCloth from '../../../../shared/assets/images/cloth-Slider/orange_cl
 
 const CalculatorCloth = () => {
     const Cloths = [{
+        name: 'Выберите ткань',
+        value: 'Выберите ткань'
+    },
+        {
         name: 'Голубая ткань',
         value: "blueCloth",
         img: blueCloth
@@ -81,7 +85,7 @@ const CalculatorCloth = () => {
                     </div>
                 </div>
                 <div className={styles.clothWrapper}>
-                    {selectedCloth !== 'Выберите ткань' ? <img src={pathImg.img} alt='img'></img> : <div>Выберите ткань...</div>}
+                    {selectedCloth !== 'Выберите ткань' ? <img className={styles.viewCloth} src={pathImg.img} alt='img'></img> : <div>Выберите ткань...</div>}
                 </div>
             </div>
         </div>

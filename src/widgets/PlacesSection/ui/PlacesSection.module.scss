@@ -1,0 +1,14 @@
+@use '../../..//app/styles/variables' as v;
+@use '../../..//app/styles/mixins' as m;
+
+
+.placesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 40px;
+    justify-content: center;
+}
+
+.cardHeight {
+    height: 400px;
+}

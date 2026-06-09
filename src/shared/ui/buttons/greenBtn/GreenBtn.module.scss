@@ -1,0 +1,11 @@
+@use '../../../../app/styles/variables' as v;
+
+.button {
+  background-color: v.$color-gold;
+  border-radius: 50%;
+  border: 0;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 20px 30px;
+  color: v.$color-black;
+}

@@ -1,5 +1,8 @@
-    import styles from './HeaderNav.module.scss'
-    import arrowIcon from '../../../../shared/assets/icons/arrow_katalog.svg';
+import { NavLink } from 'react-router-dom';
+import { ROUTES } from '../../../config/routes';
+
+import styles from './HeaderNav.module.scss'
+import arrowIcon from '../../../../shared/assets/icons/arrow_katalog.svg';
 
 const HeaderNav = () => {
     return (
@@ -11,9 +14,9 @@ const HeaderNav = () => {
             </li>
             
             <li className={`${styles.navItem} ${styles.hasDropdown}`}>
-                <a href="#" className={styles.dropdownToggle}>
+                <NavLink to={ROUTES.CATALOG} className={styles.dropdownToggle}>
                     Каталог <img src={arrowIcon} alt="arrow" />
-                </a>
+                </NavLink>
                 <ul className={styles.dropdownMenu}>
                     <li><a href="">Link 1</a></li>
                     <li><a href="">Link 2</a></li>
@@ -21,22 +24,13 @@ const HeaderNav = () => {
                 </ul>
             </li>
 
-            <li className={styles.navItem}>
-                <a href="#">О компании</a>
-            </li>
+            <NavLink  to={ROUTES.ABOUT} className={styles.navItem}>О компании</NavLink>
             
-            <li className={styles.navItem}>
-                <a href="#">Новости</a>
-            </li>
+            <NavLink  to={ROUTES.NEWS} className={styles.navItem}>Новости</NavLink>
             
-            <li className={styles.navItem}>
-                <a href="#">Доставка и оплата</a>
-            </li>
+            <NavLink className={styles.navItem}>Доставка и оплата</NavLink>
             
-            <li className={styles.navItem}>
-                <a href="#">Контакты</a>
-            </li>
-
+            <NavLink className={styles.navItem}>Контакты</NavLink>
         </ul>
     </nav>
     )

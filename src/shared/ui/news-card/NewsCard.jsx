@@ -2,7 +2,13 @@ import styles from './NewsCard.module.scss';
 import arrowIcon from '../../../shared/assets/icons/arrow_hero-slider.svg';
 
 const NewsCard = (props) => {
-    const { image, title, description, date, link, className } = props
+    const { image,
+        title,
+        description,
+        date,
+        link,
+        className
+        } = props
 
     return (
         <a href={link || '#'} className={`${styles.newsCard} ${className || ''}`}>

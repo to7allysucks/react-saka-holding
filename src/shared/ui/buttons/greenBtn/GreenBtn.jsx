@@ -4,7 +4,7 @@ const GreenBtn = (props) => {
     const {type, img, children, className} = props
 
     return (
-        <button className={`${className}`}>{children}<img src={img}
+        <button className={`${className} ${styles.button}`}>{children}<img src={img}
                                                         alt="btn"/>
         </button>
     )

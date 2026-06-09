@@ -1,6 +1,6 @@
 import styles from './Header.module.scss';
-import HeaderTop from '../../../shared/ui/header/HeaderTop';
-import HeaderNav from '../../../shared/ui/header/HeaderNav';
+import HeaderTop from '../../../shared/ui/header/header-top';
+import HeaderNav from '../../../shared/ui/header/header-nav';
 
 const Header = () => {
     return (

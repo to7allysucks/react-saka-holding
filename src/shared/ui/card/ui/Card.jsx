@@ -1,4 +1,4 @@
-import GreenBtn from "../../buttons/greenBtn/GreenBtn";
+import GreenBtn from "../../buttons/green-btn/GreenBtn";
 import styles from "./Card.module.scss";
 import imgArrow from '../../../assets/icons/arrow-cloth-slider.svg'
 

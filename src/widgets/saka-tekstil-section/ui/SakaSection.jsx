@@ -1,6 +1,6 @@
 import styles from "./SakaSection.module.scss";
 import sakaImage from "../../../shared/assets/images/saka-tekstil/saka-tekstil.svg";
-import GreenBtn from "../../../shared/ui/buttons/greenBtn/GreenBtn";
+import GreenBtn from "../../../shared/ui/buttons/green-btn/GreenBtn";
 
 const advantages = [
   <>

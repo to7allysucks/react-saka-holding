@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import heroImg from '../../../shared/assets/images/hero-Slider/girl_with_cloth.svg'
 import arrowImg from '../../../shared/assets/icons/strelka_hero-slider.svg'
-import GreenBtn from '../../../shared/ui/buttons/greenBtn/GreenBtn'
+import GreenBtn from '../../../shared/ui/buttons/green-btn/GreenBtn'
 
 const HeroSection = () => {
 

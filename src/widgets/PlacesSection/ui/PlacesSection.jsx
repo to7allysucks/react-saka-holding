@@ -1,5 +1,5 @@
 import styles from './PlacesSection.module.scss';
-import NewsCard from '../../../shared/ui/news-card/NewsCard';
+import NewsCard from '../../../shared/ui/news-card';
 import img1 from '../../../shared/assets/images/hero-images-news/1.svg'
 import img2 from '../../../shared/assets/images/hero-images-news/2.svg'
 import img3 from '../../../shared/assets/images/hero-images-news/3.svg'

@@ -1,4 +1,4 @@
-import CalculatorCloth from '../../../shared/ui/calculator/ui/CalculatorCloth'
+import CalculatorCloth from '../../../shared/ui/calculator'
 import styles from './CalculatePriceSection.module.scss'
 
 const CalculatePriceSection = () => {

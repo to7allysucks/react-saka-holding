@@ -38,3 +38,28 @@
 .prevElement {
     rotate: 180deg;
 }
+
+
+//theme = reviews
+
+.sliderReviewsWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.actionsWrapper {
+    display: flex;
+    justify-content: space-between;
+    color: v.$color-accent;
+    align-items: center;
+
+    > h3 {
+        width: 50%;
+    }
+}
+
+.btnsWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}

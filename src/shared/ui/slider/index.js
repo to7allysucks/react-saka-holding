@@ -1,1 +1,3 @@
-import Slider from "./Slider";
+import Slider from "./ui/Slider";
+
+export default Slider

@@ -1,11 +1,11 @@
 import { SwiperSlide } from "swiper/react"
 import styles from "./CardsSection.module.scss"
-import Slider from "../../../shared/ui/slider/Slider"
+import Slider from "../../../shared/ui/slider"
 import img1 from '../../../shared/assets/images/cloth-Slider/blue_cloth.svg'
 import img2 from '../../../shared/assets/images/cloth-Slider/green_cloth.svg'
 import img3 from '../../../shared/assets/images/cloth-Slider/orange_cloth.svg'
 import img4 from '../../../shared/assets/images/cloth-Slider/grey_cloth.svg'
-import Card from "../../../shared/ui/card/ui/Card"
+import Card from "../../../shared/ui/card"
 
 
 const CardsSection = () => {

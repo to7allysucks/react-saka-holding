@@ -1,5 +1,5 @@
 import styles from './NewsCard.module.scss';
-import arrowIcon from '../../../shared/assets/icons/arrow_hero-slider.svg';
+import arrowIcon from '../../../assets/icons/arrow_hero-slider.svg';
 
 const NewsCard = (props) => {
     const { image,

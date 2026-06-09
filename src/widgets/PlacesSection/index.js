@@ -1,1 +1,3 @@
-import { default } from './ui/PlacesSection'
+import PlacesSection from './ui/PlacesSection'
+
+export default PlacesSection

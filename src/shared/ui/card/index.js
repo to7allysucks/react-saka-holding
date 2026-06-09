@@ -1,1 +1,3 @@
-import { default } from './ui/Card'
+import Card from './ui/Card'
+
+export default Card

@@ -1,1 +1,3 @@
-export { default } from './ui/HeroSection'
+import HeroSection from './ui/HeroSection'
+
+export default HeroSection

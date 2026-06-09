@@ -1,1 +1,3 @@
-import { default } from './ui/Certificates'
+import Certificates from './ui/Certificates'
+
+export default Certificates

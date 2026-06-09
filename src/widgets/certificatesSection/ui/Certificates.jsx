@@ -1,4 +1,4 @@
-import Slider from '../../../shared/ui/slider/Slider'
+import Slider from '../../../shared/ui/slider'
 import styles from './Certificates.module.scss'
 import 'swiper/css'
 import { useRef, useState } from 'react'

@@ -1,1 +1,3 @@
-import { default } from './ui/NewsPage'
+import NewsPage from './ui/NewsPage'
+
+export default NewsPage

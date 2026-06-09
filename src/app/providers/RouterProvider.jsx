@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ROUTES } from "../../shared/config/routes";
-import HomePage from "../../pages/home/ui/HomePage";
-import Header from "../../widgets/header/ui/Header";
-import AboutPage from "../../pages/about/ui/AboutPage";
-import CatalogPage from '../../pages/catalog/ui/CatalogPage';
-import NewsPage from "../../pages/news/ui/NewsPage";
+import HomePage from "../../pages/home";
+import Header from "../../widgets/header";
+import AboutPage from "../../pages/about";
+import CatalogPage from '../../pages/catalog';
+import NewsPage from "../../pages/news";
 
 const Layout = ({children}) => {
   return (

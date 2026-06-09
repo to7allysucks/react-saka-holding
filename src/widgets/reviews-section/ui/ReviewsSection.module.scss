@@ -1,0 +1,37 @@
+@use '../../../app/styles/variables' as v;
+@use '../../../app/styles/mixins' as m;
+
+.btnReview {
+    background-color: v.$color-grey;
+    border-radius: 16px;
+    padding: 18px;
+    transition: background-color v.$transition-duration-default ease;
+
+    &:hover {
+        background-color: v.$color-gold;
+    }
+
+    &:active {
+        background-color: rgba(v.$color-gold, $alpha: 0.8);
+    }
+}
+
+
+.reviewSlide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: v.$color-grey;
+    border-radius: 16px;
+    padding: 30px;
+    min-height: 400px;
+
+    & > p {
+        color: v.$color-accent;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 2%;
+        line-height: 165%;
+        flex-grow: 1;
+    }
+}

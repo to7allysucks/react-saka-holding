@@ -1,6 +1,7 @@
 import styles from "./SakaSection.module.scss";
 import sakaImage from "../../../shared/assets/images/saka-tekstil/saka-tekstil.svg";
-import GreenBtn from "../../../shared/ui/buttons/green-btn/GreenBtn";
+import GreenBtn from "../../../shared/ui/buttons/green-btn";
+import arrowIcon from '../../../shared/assets/icons/strelka_hero-slider.svg'
 
 const advantages = [
   <>
@@ -44,7 +45,7 @@ const SakaSection = () => {
           ))}
         </ul>
 
-        <GreenBtn type='button' href="#catalog" text='Смотреть каталог'></GreenBtn>
+        <GreenBtn type='button' href="#catalog" children='Смотреть каталог' img={arrowIcon}></GreenBtn>
       </div>
     </section>
   );

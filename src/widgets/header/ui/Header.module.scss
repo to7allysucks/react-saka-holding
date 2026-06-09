@@ -1,8 +1,8 @@
-@import '../../../app/styles/vars';
-@import '../../../app/styles/mixins';
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
 
 .header {
     width: 100%;
     font-size: 16px;
-    background-color: $color-accent;
+    background-color: v.$color-accent;
 }

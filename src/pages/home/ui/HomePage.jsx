@@ -13,6 +13,7 @@ const HomePage = () => {
             <NewsCard />
             <SakaSection />
             <Certificates />
+            <Cards />
             <CalculatePriceSection />
         </div>
     )

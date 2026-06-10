@@ -10,6 +10,10 @@ import qualityIcon from '../../../shared/assets/icons/quality.svg'
 const AdvantagesSection = () => {
     return (
         <section className={styles.advantagesSection}>
+            <h3>
+                Наша главная задача - не просто предоставить качественную ткань, 
+                но и оказать каждому заказчику высокий уровень клиентского сервиса
+            </h3>
             <AdvantageCard 
             image={logisticsIcon} 
             title='ЛОГИСТИКА' 

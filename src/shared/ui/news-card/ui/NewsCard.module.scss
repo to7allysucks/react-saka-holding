@@ -89,7 +89,7 @@
   margin: 0;
   font-size: f.to-rem(14);
   line-height: 1.5;
-  
+  font-weight: 300;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -100,6 +100,7 @@
   margin-top: auto;
   font-family: v.$font-main;
   font-size: f.to-rem(12);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  color: v.$color-white;
 }

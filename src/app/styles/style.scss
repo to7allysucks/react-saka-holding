@@ -10,26 +10,42 @@
 }
 
 h2 {
-  font-size: functions.to-rem(32);
+  font-size: functions.to-rem(36);
   font-weight: 600;
   color: variables.$color-white;
+
+  @include mixins.laptop {
+    font-size: functions.to-rem(32);
+  }
 }
 
 h3 {
-  font-size: functions.to-rem(26);
+  font-size: functions.to-rem(30);
   font-weight: 600;
   color: variables.$color-black;
+
+  @include mixins.laptop {
+    font-size: functions.to-rem(26);
+  }
 }
 
 h5 {
-  font-size: functions.to-rem(18);
+  font-size: functions.to-rem(24);
   color: variables.$color-white;
+
+  @include mixins.laptop {
+    font-size: functions.to-rem(18);
+  }
 }
 
 h6 {
-  font-size: functions.to-rem(16);
+  font-size: functions.to-rem(18);
   color: variables.$color-black;
   font-weight: 700;
+
+  @include mixins.laptop {
+    font-size: functions.to-rem(16);
+  }
 }
 
 main{

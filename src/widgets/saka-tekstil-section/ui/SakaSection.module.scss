@@ -38,14 +38,14 @@
       animation: arrowAnimation 0.4s infinite alternate ease;
     }
 
-@keyframes arrowAnimation {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transition: all linear 0.2s;
-    transform: translateX(10px);
-  }
+  @keyframes arrowAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transition: all linear 0.2s;
+      transform: translateX(10px);
+    }
   }
 }
 

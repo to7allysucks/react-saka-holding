@@ -1,4 +1,4 @@
-import GreenBtn from "../../buttons/green-btn/GreenBtn";
+import GoldBtn from "../../buttons/gold-btn/GoldBtn";
 import styles from "./Card.module.scss";
 import imgArrow from '../../../assets/icons/arrow-cloth-slider.svg'
 
@@ -28,7 +28,7 @@ const Card = (props) => {
           <span className={styles.width}>{`${width} см`}</span>
         </div>
 
-        <GreenBtn img={imgArrow}  className={styles.btnCard} type="button">Подробнее</GreenBtn>
+        <GoldBtn img={imgArrow}  className={styles.btnCard} type="button">Подробнее</GoldBtn>
       </div>
     </article>
   );

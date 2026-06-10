@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import heroImg from '../../../shared/assets/images/hero-Slider/girl_with_cloth.svg'
 import arrowImg from '../../../shared/assets/icons/strelka_hero-slider.svg'
-import GreenBtn from '../../../shared/ui/buttons/green-btn/GreenBtn'
+import GoldBtn from '../../../shared/ui/buttons/gold-btn/GoldBtn'
 
 const HeroSection = () => {
 
@@ -72,7 +72,7 @@ const HeroSection = () => {
                        style={{background: `linear-gradient(-45deg, ${slide.bgLeft} 50%, ${slide.bgRight} 50%)`}}>
             <div className={styles.content}>
               <h2>Здесь будет слайдер с различными акциями или <span className={styles.accentInfo}>специальными предложениями</span></h2>
-              <GreenBtn type='button' img={arrowImg} className={`${styles.button} ${styles.btnHero}`}>Подробнее</GreenBtn>
+              <GoldBtn type='button' img={arrowImg} className={`${styles.button} ${styles.btnHero}`}>Подробнее</GoldBtn>
             </div>
           </SwiperSlide>
         ))}

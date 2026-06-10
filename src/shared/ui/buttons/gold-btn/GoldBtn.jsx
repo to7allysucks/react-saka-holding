@@ -1,6 +1,6 @@
-import styles from './GreenBtn.module.scss'
+import styles from './GoldBtn.module.scss'
 
-const GreenBtn = (props) => {
+const GoldBtn = (props) => {
     const {type, img, children, className} = props
 
     return (
@@ -10,4 +10,4 @@ const GreenBtn = (props) => {
     )
 }
 
-export default GreenBtn
+export default GoldBtn

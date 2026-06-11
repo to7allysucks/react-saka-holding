@@ -7,6 +7,7 @@
 * {
   color: variables.$color-white;
   font-size: functions.to-rem(16);
+  letter-spacing: variables.$letter-spacing-default;
 }
 
 h2 {

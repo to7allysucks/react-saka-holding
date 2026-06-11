@@ -19,6 +19,7 @@
 
     .navItem {
         transition-duration: v.$transition-duration-default;
+        letter-spacing: v.$letter-spacing-navbar;
         
         &:hover {
             color: v.$color-secondary;

@@ -1,6 +1,61 @@
+@use '../../../app/styles/variables' as v;
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
+}
+
+.imgParams {
+    rotate: 45deg;
+    fill: black !important;
+}
+
+.cardsWrapper {
+    background-color: v.$color-accent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1160px;
+    align-items: center;
+    padding: 40px 60px 40px 60px;
+    border-radius: 16px;
+}
+
+.resultWrapper {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba( #ffffff, 0.05);
+    border-radius: 16px;
+    gap: 52px;
+}
+
+.resultScore {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    & > span {
+        font-size: 12px;
+    }
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        color: v.$color-white;
+        gap: 28px;
+
+        & > span {
+            width: 80%;
+        }
+    }
+}
+
+.resultPrice {
+    font-size: 64px;
 }

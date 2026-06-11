@@ -1,16 +1,5 @@
 @use '@styles/variables' as v;
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 1160px;
-    align-items: center;
-    background-color: v.$color-accent;
-    padding: 40px 60px 40px 60px;
-    border-radius: 16px;
-}
 
 .chooseParamsContainter {
     display: flex;
@@ -32,7 +21,7 @@
 
 .counterCloth {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     align-items: center;
 
     & > button {
@@ -125,6 +114,7 @@
     border-radius: 16px;
     appearance: none;
     outline: 0;
+    max-width: 400px;
 }
 
 .clothOption {

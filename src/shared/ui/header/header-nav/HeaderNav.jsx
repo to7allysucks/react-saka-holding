@@ -8,19 +8,16 @@ const HeaderNav = () => {
     return (
     <nav className={styles.headerNav}>
         <ul className={styles.navList}>
-
-            <li className={styles.navItem}>
-                <a href="/">Главная</a>
-            </li>
+                <NavLink to={ROUTES.HOME} className={styles.navItem}>Главная</NavLink>
             
             <li className={`${styles.navItem} ${styles.hasDropdown}`}>
-                <NavLink to={ROUTES.CATALOG} className={styles.dropdownToggle}>
+                <NavLink to={ROUTES.CATALOG} className={`${styles.dropdownToggle} ${styles.navItem}`}>
                     Каталог <img src={arrowIcon} alt="arrow" />
                 </NavLink>
                 <ul className={styles.dropdownMenu}>
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
+                    <li><a href="">1st item</a></li>
+                    <li><a href="">2nd item</a></li>
+                    <li><a href="">3rd item</a></li>
                 </ul>
             </li>
 

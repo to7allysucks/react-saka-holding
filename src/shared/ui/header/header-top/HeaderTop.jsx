@@ -37,7 +37,7 @@ const HeaderTop = () => {
                 <button className={styles.callbackBtn}>Заказать звонок</button>
             </div>
             <div className={styles.themeSwitch}>
-                <span className={styles.activeTheme}>LIGHT</span> / <span>DARK</span>
+                <span className={styles.activeTheme}>LT</span> / <span>DK</span>
             </div>
         </div>
     </div>

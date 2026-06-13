@@ -6,7 +6,6 @@
     display: flex;
     background-color: v.$color-tertiary;
     padding: 26px 180px;
-    font-size: f.to-rem(16);
     
     @include m.laptop {
         font-size: f.to-rem(14);
@@ -20,9 +19,14 @@
     .navItem {
         transition-duration: v.$transition-duration-default;
         letter-spacing: v.$letter-spacing-navbar;
+        font-size:  0.8333vw;
         
         &:hover {
             color: v.$color-secondary;
+            img {
+                transition-duration: v.$transition-duration-default;
+                filter: brightness(0) saturate(100%) invert(98%) sepia(4%) saturate(5035%) hue-rotate(318deg) brightness(88%) contrast(96%);
+            }
         }
     }
 }
@@ -32,14 +36,47 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .dropdownMenu {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: v.$transition-duration-slow;
+    position: absolute;
+    top: 150%;
+    left: -20px;
+    z-index: 10;
+    background-color: v.$color-tertiary;
+    padding-inline: 20px;
+    min-width: 120px;
+
+    a {
+        font-size: 0.8333vw;
+        
+        &:hover {
+            color: v.$color-gold;
+        }
+    }
+}
+
+.hasDropdown {
+    transition: 2s all;
+    position: relative;
+    &:hover {
+        .dropdownMenu {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 .dropdownToggle {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    
+    img {
+        width: 0.6771vw;
+    }
 }

@@ -71,15 +71,16 @@
 }
 
 .tagline {
+    font-size: 0.8333vw;
     font-weight: 300;
-    margin-left: 60px;
+    margin-left: 3.1250vw;
 
     @include m.laptop {
         font-size: f.to-rem(12);
     }
 
     @include m.tablet {
-        margin-left: 49px;
+        margin-left: 2.5521vw;
     }
 
     @include m.mobile {
@@ -170,7 +171,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: f.to-rem(20);
+    font-size: 1vw;
     font-weight: 600;
     gap: 5px;
 }
@@ -182,6 +183,7 @@
     font-weight: 300;
     text-align: right;
     transition-duration: v.$transition-duration-default;
+    font-size:  0.8333vw;
 
     &:hover {
         color: v.$color-secondary;

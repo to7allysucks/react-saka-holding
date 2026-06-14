@@ -5,7 +5,6 @@
 .section {
   width: 100%;
   background-color: v.$color-white;
-  font-family: v.$font-main;
 }
 
 .container {
@@ -18,9 +17,8 @@
   align-items: center;
   gap: 14px;
   margin-bottom: 19px;
-  font-size: 8px;
+  font-size: f.to-rem(8);
   font-weight: 500;
-  letter-spacing: 2.1px;
   text-transform: uppercase;
 }
 
@@ -30,11 +28,11 @@
   transition: color v.$transition-duration-default ease;
 
   &:hover {
-    color: #c8a665;
+    color: v.$color-gold;
   }
 
   &:focus-visible {
-    outline: 2px solid #c8a665;
+    outline: 2px solid v.$color-gold;
     outline-offset: 3px;
   }
 }
@@ -44,15 +42,14 @@
 }
 
 .breadcrumbCurrent {
-  color: v.$color-blue-dark;
+  color: v.$color-accent;
 }
 
 .pageTitle {
   margin: 0 0 31px;
-  color: v.$color-blue-dark;
-  font-size: 25px;
+  color: v.$color-accent;
+  font-size: f.to-rem(25);
   font-weight: 700;
-  line-height: 1.2;
 }
 
 .about {
@@ -65,17 +62,8 @@
 .imageWrapper {
   width: 100%;
   height: 100%;
-  
   overflow: hidden;
   border-radius: 0 10px 10px 0;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .content {
@@ -86,23 +74,21 @@
   height: 70px;
   width: 660px;
   margin: 0 0 15px;
-  color: v.$color-blue-dark;
-  font-size: 26px;
+  color: v.$color-accent;
+  font-size: f.to-rem(26);
   font-weight: 700;
-  line-height: 1.35;
 }
 
 .description {
   height: 273px;
   width: 560px;
-  color: v.$color-blue-dark;
-  font-size: 14px;
+  color: v.$color-accent;
+  font-size: f.rem(14);
   font-weight: 400;
-  line-height: 1.45;
 
   p {
-    font-size: 18px;
-    color: v.$color-blue-dark;
+    font-size: f.to-rem(18);
+    color: v.$color-accent;
     margin: 0 0 12px;
   }
 
@@ -127,16 +113,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 180px;
   height: 180px;
-
-  font-size: 14px;
+  font-size: f.to-rem(14);
   padding: 15px 10px;
   box-sizing: border-box;
-
   background-color: v.$color-grey;
-
   text-align: center;
 }
 
@@ -144,30 +126,27 @@
   width: 24px;
   height: 24px;
   margin-bottom: 6px;
-  color: #c8a665;
+  color: v.$color-gold;
 }
 
 .statisticValue {
   margin-bottom: 5px;
-  font-size: 42px;
+  font-size: f.to-rem(42);
   font-weight: 600;
-  line-height: 1;
-  color: #c8a665;
+  color: v.$color-gold;
 }
 
 .statisticValue1 {
   margin-bottom: 5px;
-  font-size: 32px;
+  font-size: f.to-rem(32);
   font-weight: 600;
-  line-height: 1;
-  color: #c8a665;
+  color: v.$color-gold;
 }
 
 .statisticDescription {
-  font-size: 14px;
+  font-size: f.to-rem(14);
   font-weight: 500;
-  line-height: 1.2;
-  color: v.$color-blue-dark;
+  color: v.$color-accent;
   display: block;
   white-space: pre-line;
   text-align: center;

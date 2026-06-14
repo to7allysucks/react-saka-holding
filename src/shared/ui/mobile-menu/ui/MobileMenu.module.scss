@@ -200,7 +200,7 @@
         font-size: f.to-rem(16);
         font-weight: bold;
         padding: 14px 24px;
-        letter-spacing: 1px;
+        letter-spacing: v.$letter-spacing-default;
     }
 }
 

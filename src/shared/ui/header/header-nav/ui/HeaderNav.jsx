@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import { ROUTES } from '../../../config/routes';
+import { ROUTES } from '../../../../config/routes';
 
 import styles from './HeaderNav.module.scss'
-import arrowIcon from '../../../../shared/assets/icons/arrow_katalog.svg';
+import arrowIcon from '../../../../../shared/assets/icons/arrow_katalog.svg';
 
 const HeaderNav = () => {
     return (

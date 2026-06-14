@@ -1,3 +1,3 @@
-import HeaderTop from './HeaderTop'
+import HeaderTop from './ui/HeaderTop'
 
 export default HeaderTop

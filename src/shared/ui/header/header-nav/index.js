@@ -1,3 +1,3 @@
-import HeaderNav from './HeaderNav'
+import HeaderNav from './ui/HeaderNav'
 
 export default HeaderNav

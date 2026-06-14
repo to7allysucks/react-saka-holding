@@ -12,6 +12,10 @@
         padding: 26px 120px;
     }
 
+    @include m.tablet {
+        display: none;
+    }
+
     @include m.mobile {
         font-size: f.to-rem(16);
     }

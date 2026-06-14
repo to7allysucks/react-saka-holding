@@ -19,9 +19,6 @@
 
     @include m.mobile {
         max-width: 86px;
-    }
-
-    @include m.mobile {
         margin-right: 15px;
     }
 }
@@ -56,7 +53,6 @@
         @include m.laptop {
             min-width: 48px;
             min-height: 48px;
-            
         }
 
         @include m.mobile {
@@ -80,7 +76,7 @@
     }
 
     @include m.tablet {
-        margin-left: 2.5521vw;
+        display: none;
     }
 
     @include m.mobile {
@@ -102,8 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255,255, 0.05);
-    border: none;
+    background-color: rgb(255, 255, 255, 0.05);
     border-radius: 50%;
     min-width: 40px;
     height: 40px;
@@ -123,7 +118,6 @@
         font-size: f.to-rem(10);
         min-width: 16px;
         min-height: 16px;
-        border: none;
         border-radius: 50%; 
         background-color: v.$color-secondary;
         color: v.$color-white;
@@ -144,6 +138,14 @@
     @include m.laptop {
         gap: 38px;
     }
+
+    @include m.tablet {
+        display: none;
+    }
+
+    @include m.mobile {
+        display: none;
+    }
 }
 
 .actionLink {
@@ -151,12 +153,9 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    font-size: f.to-rem(14);
+    font-size: f.to-rem(12);
     font-weight: 500;
 
-    @include m.laptop;
-
-    font-size: f.to-rem(12);
     img {
         width: 16px;
     }
@@ -177,13 +176,11 @@
 }
 
 .callbackBtn {
-    background-color: inherit;
-    border: none;
     text-decoration: underline 0.5px;
     font-weight: 300;
     text-align: right;
     transition-duration: v.$transition-duration-default;
-    font-size:  0.8333vw;
+    font-size: 0.8333vw;
 
     &:hover {
         color: v.$color-secondary;
@@ -194,7 +191,7 @@
     cursor: pointer;
     user-select: none;
     font-size: f.to-rem(14);
-    color: rgb(255, 255,255, 0.25);
+    color: rgb(255, 255, 255, 0.25);
 
     span {
         font-size: f.to-rem(14);
@@ -206,7 +203,40 @@
     }
 }
 
-
 .activeTheme {
     color: v.$color-white;
+}
+
+.burgerBtn {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 32px;
+    height: 18px;
+    padding: 0;
+
+    @include m.tablet {
+        display: flex;
+    }
+
+    span {
+        display: block;
+        height: 2px;
+        background-color: v.$color-white;
+        border-radius: 2px;
+        transition: width v.$transition-duration-default ease;
+
+        &:nth-child(1) {
+            width: 100%;
+        }
+
+        &:nth-child(2) {
+            width: 75%;
+        }
+
+        &:nth-child(3) {
+            width: 50%;
+        }
+    }
 }

@@ -1,0 +1,227 @@
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
+@use '@styles/functions' as f;
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    z-index: 100;
+    pointer-events: none;
+    transition: background v.$transition-duration-slow ease;
+
+    &.active {
+        background: rgba(0, 0, 0, 0.5);
+        pointer-events: all;
+    }
+}
+
+.menuDrawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    max-width: 360px;
+    height: 100vh;
+    background: v.$color-accent;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform v.$transition-duration-slow cubic-bezier(0.16, 1, 0.3, 1);
+
+    &.active {
+        transform: translateX(0);
+    }
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 24px;
+    margin-bottom: 20px;
+}
+
+.logoBlock {
+    .logo {
+        width: 120px;
+        margin-bottom: 12px;
+    }
+    .emblems {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 12px;
+        img { width: 24px; height: 24px; }
+    }
+    .tagline {
+        font-size: f.to-rem(10);
+        margin: 0;
+    }
+}
+
+.closeBtn {
+    padding: 0;
+    
+    img {
+        width: f.to-rem(24);
+        height: f.to-rem(24);
+    }
+}
+
+.themeSwitch {
+    font-size: f.to-rem(14);
+    margin-bottom: 40px;
+    padding: 0 24px;
+    .activeTheme { font-weight: bold; }
+}
+
+.nav {
+    margin-bottom: 40px;
+    padding: 0 24px;
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .navItem, .submenuToggle {
+        font-size: f.to-rem(18);
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.hasSubmenu {
+    .arrow {
+        width: 12px;
+        transition: transform v.$transition-duration-slow ease;
+    }
+
+    .submenuWrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows v.$transition-duration-slow ease;
+        overflow: hidden;
+    }
+
+    .submenu {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding-left: 16px;
+
+        a {
+            font-size: f.to-rem(16);
+            display: block;
+            margin-top: 10px;
+        }
+    }
+
+    &.active {
+        .arrow { transform: rotate(180deg); }
+        .submenuWrapper { grid-template-rows: 1fr; }
+    }
+}
+
+.menuFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid v.$color-tertiary;
+    padding: 24px 24px 40px 24px;
+
+    .phone {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: f.to-rem(18);
+        font-weight: bold;
+        img { width: 18px; }
+    }
+
+    .callbackLink {
+        text-decoration: underline;
+        text-align: left;
+        padding: 0;
+        font-size: f.to-rem(14);
+    }
+}
+
+.bottomActions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+
+    .cartBtn {
+        position: relative;
+        padding: 0;
+        img { width: 24px; }
+
+        .badge {
+            position: absolute;
+            top: -5px;
+            right: -8px;
+            background: v.$color-secondary;
+            color: v.$color-accent;
+            font-size: f.to-rem(10);
+            padding: 2px 6px;
+            border-radius: 10px;
+        }
+    }
+
+    .loginLink {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: f.to-rem(14);
+        img { width: 18px; }
+    }
+}
+
+.promoSection {
+    display: flex;
+    flex-direction: column;
+
+    .promoHeader {
+        background: v.$color-secondary;
+        color: v.$color-accent;
+        font-size: f.to-rem(16);
+        font-weight: bold;
+        padding: 14px 24px;
+        letter-spacing: 1px;
+    }
+}
+
+.textureList {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: f.to-rem(14);
+    }
+
+    img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+}

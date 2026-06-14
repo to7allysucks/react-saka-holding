@@ -1,0 +1,69 @@
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
+@use '@styles/functions' as f;
+
+.catalogBar {
+    width: 100%;
+    padding-inline: 180px;
+    background: v.$color-blue-dark;
+
+    @include m.tablet {
+        display: none;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.promoBtn {
+    background: v.$color-secondary;
+    color: v.$color-accent !important;
+    font-size: f.to-rem(14);
+    font-weight: bold;
+    padding: 13px 54px 18px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+}
+
+.textureList {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 20px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.textureItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+
+    img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    span {
+        font-size: f.to-rem(13);
+        color: v.$color-white;
+        transition: color v.$transition-duration-default ease;
+    }
+
+    &:hover {
+        span {
+            color: v.$color-secondary;
+        }
+    }
+}

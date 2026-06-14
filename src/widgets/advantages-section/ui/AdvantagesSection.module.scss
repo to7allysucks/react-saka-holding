@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 105px repeat(2, 1fr);
-    background-color: v.$color-grey;
+    background-color: v.$color-light-grey;
     column-gap: 50px;
     row-gap: 40px;
     background-image: url(../../../shared/assets/images/background-images/purple-wave.svg);

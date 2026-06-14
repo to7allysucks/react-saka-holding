@@ -19,7 +19,7 @@
 }
 
 .promoBtn {
-    background: v.$color-secondary;
+    background: v.$color-gold;
     color: v.$color-accent !important;
     font-size: f.to-rem(14);
     font-weight: bold;
@@ -63,7 +63,7 @@
 
     &:hover {
         span {
-            color: v.$color-secondary;
+            color: v.$color-gold;
         }
     }
 }

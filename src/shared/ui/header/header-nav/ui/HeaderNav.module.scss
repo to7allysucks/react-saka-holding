@@ -27,7 +27,7 @@
         
 
         &:hover {
-            color: v.$color-secondary;
+            color: v.$color-gold;
             img {
                 transition-duration: v.$transition-duration-default;
                 transform: rotate(180deg);
@@ -62,7 +62,7 @@
         font-size: 0.8333vw;
         
         &:hover {
-            color: v.$color-gold;
+            color: v.$color-secondary;
         }
     }
 }

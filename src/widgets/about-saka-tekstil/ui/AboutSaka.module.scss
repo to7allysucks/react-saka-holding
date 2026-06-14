@@ -23,22 +23,22 @@
 }
 
 .breadcrumbLink {
-  color: v.$color-grey;
+  color: v.$color-light-grey;
   text-decoration: none;
   transition: color v.$transition-duration-default ease;
 
   &:hover {
-    color: v.$color-gold;
+    color: v.$color-secondary;
   }
 
   &:focus-visible {
-    outline: 2px solid v.$color-gold;
+    outline: 2px solid v.$color-secondary;
     outline-offset: 3px;
   }
 }
 
 .breadcrumbSeparator {
-  color: v.$color-grey;
+  color: v.$color-light-grey;
 }
 
 .breadcrumbCurrent {
@@ -118,7 +118,7 @@
   font-size: f.to-rem(14);
   padding: 15px 10px;
   box-sizing: border-box;
-  background-color: v.$color-grey;
+  background-color: v.$color-light-grey;
   text-align: center;
 }
 
@@ -126,21 +126,21 @@
   width: 24px;
   height: 24px;
   margin-bottom: 6px;
-  color: v.$color-gold;
+  color: v.$color-secondary;
 }
 
 .statisticValue {
   margin-bottom: 5px;
   font-size: f.to-rem(42);
   font-weight: 600;
-  color: v.$color-gold;
+  color: v.$color-secondary;
 }
 
 .statisticValue1 {
   margin-bottom: 5px;
   font-size: f.to-rem(32);
   font-weight: 600;
-  color: v.$color-gold;
+  color: v.$color-secondary;
 }
 
 .statisticDescription {

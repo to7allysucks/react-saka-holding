@@ -173,7 +173,7 @@
             position: absolute;
             top: -5px;
             right: -8px;
-            background: v.$color-secondary;
+            background: v.$color-gold;
             color: v.$color-accent;
             font-size: f.to-rem(10);
             padding: 2px 6px;
@@ -195,7 +195,7 @@
     flex-direction: column;
 
     .promoHeader {
-        background: v.$color-secondary;
+        background: v.$color-gold;
         color: v.$color-accent;
         font-size: f.to-rem(16);
         font-weight: bold;

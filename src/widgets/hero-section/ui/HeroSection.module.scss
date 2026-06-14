@@ -20,7 +20,7 @@
 }
 
 .accentInfo {
-  color: v.$color-gold;
+  color: v.$color-secondary;
   font-size: f.to-rem(32);
 }
 
@@ -57,7 +57,7 @@
   width: 30px !important;
   height: 3px !important;
   border-radius: 1px !important;
-  background: v.$color-gold !important;
+  background: v.$color-secondary !important;
   transition: 0.2s width linear;
 }
 
@@ -147,7 +147,7 @@
       font-size: 3vw;
 
       & > span {
-        color: v.$color-gold;
+        color: v.$color-secondary;
         font-size: 3vw;
       }
     }
@@ -203,7 +203,7 @@
       font-size: f.to-rem(18);
 
       & > span {
-        color: v.$color-gold;
+        color: v.$color-secondary;
         font-size: f.to-rem(18);
       }
     }

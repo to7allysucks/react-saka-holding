@@ -7,7 +7,7 @@
   width: 100%;
   min-height: 432px;
   overflow: hidden;
-  background-color: v.$color-grey;
+  background-color: v.$color-light-grey;
 }
 
 .imageWrapper {
@@ -59,7 +59,7 @@
 }
 
 .titleAccent {
-  color: v.$color-gold;
+  color: v.$color-secondary;
   font-size: f.to-rem(26);
 }
 
@@ -84,7 +84,7 @@
   width: 30px;
   height: 4px;
   margin-top: 7px;
-  background-color: v.$color-gold;
+  background-color: v.$color-secondary;
 }
 
 .text {

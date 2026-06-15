@@ -1,3 +1,5 @@
+@use './functions' as f;
+
 @mixin laptop {
   @media (max-width: 1440px) {
     @content;
@@ -14,4 +16,24 @@
   @media (max-width: 480px) {
     @content;
   }
+}
+
+@mixin container-padding {
+    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
+    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
+
+    @include laptop {
+        padding-left: f.fluid(39px, 120px, 960px, 1440px);
+        padding-right: f.fluid(39px, 120px, 960px, 1440px);
+    }
+
+    @include tablet {
+        padding-left: f.fluid(30px, 39px, 480px, 960px);
+        padding-right: f.fluid(30px, 39px, 480px, 960px);
+    }
+
+    @include mobile {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

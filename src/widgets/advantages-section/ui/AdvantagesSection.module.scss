@@ -1,5 +1,6 @@
 @use '@styles/variables' as v;
 @use '@styles/mixins' as m;
+@use '@styles/functions' as f;  
 
 .advantagesSection {
     display: grid;
@@ -11,7 +12,10 @@
     background-image: url(../../../shared/assets/images/background-images/purple-wave.svg);
     background-repeat: no-repeat;
     background-position: right;
-    padding: 120px 0 120px 0;
+    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
+    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
+    padding-top: 120px;
+    padding-bottom: 120px;
 
     > h3 {
         grid-column: span 4;

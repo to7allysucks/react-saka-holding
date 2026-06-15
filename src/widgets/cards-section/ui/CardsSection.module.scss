@@ -1,8 +1,13 @@
-@use '../../../app/styles/variables' as v;
+@use '@styles/variables' as v;
+@use '@styles/functions' as f;
 
 .CardsSliderContainter {
     background-color: v.$color-light-grey;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
+    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
+
 }
 
 .btnNav {

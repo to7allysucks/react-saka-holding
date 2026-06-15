@@ -3,6 +3,11 @@
 @use '@styles/functions' as f;
 
 
+.reviewContainer {
+    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
+    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
+}
+
 .btnReview {
     background-color: v.$color-light-grey;
     border-radius: 16px;

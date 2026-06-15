@@ -5,11 +5,18 @@
 .headerNav {
     display: flex;
     background-color: v.$color-tertiary;
-    padding: 26px 180px;
-    
+    padding-top: f.fluid(26px, 26px, 1440px, 1920px);
+    padding-bottom: f.fluid(26px, 26px, 1440px, 1920px);
+    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
+    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
+
     @include m.laptop {
         font-size: f.to-rem(14);
-        padding: 26px 120px;
+        
+        padding-top: f.fluid(18px, 26px, 960px, 1440px);
+        padding-bottom: f.fluid(18px, 26px, 960px, 1440px);
+        padding-left: f.fluid(39px, 120px, 960px, 1440px);
+        padding-right: f.fluid(39px, 120px, 960px, 1440px);
     }
 
     @include m.tablet {

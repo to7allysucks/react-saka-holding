@@ -11,30 +11,24 @@
     
     padding-top: f.fluid(18px, 26px, 1440px, 1920px);
     padding-bottom: f.fluid(18px, 26px, 1440px, 1920px);
-    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
-    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
+
+    @include m.container-padding;
 
     @include m.laptop {
         font-size: f.to-rem(12);
         
         padding-top: f.fluid(28px, 18px, 960px, 1440px);
         padding-bottom: f.fluid(28px, 18px, 960px, 1440px);
-        padding-left: f.fluid(39px, 120px, 960px, 1440px);
-        padding-right: f.fluid(39px, 120px, 960px, 1440px);
     }
 
     @include m.tablet {
         padding-top: f.fluid(37px, 28px, 480px, 960px);
         padding-bottom: f.fluid(37px, 28px, 480px, 960px);
-        padding-left: f.fluid(30px, 39px, 480px, 960px);
-        padding-right: f.fluid(30px, 39px, 480px, 960px);
     }
 
     @include m.mobile {
         padding-top: 37px;
         padding-bottom: 37px;
-        padding-left: 30px;
-        padding-right: 30px;
     }
 }
 

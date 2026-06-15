@@ -8,9 +8,8 @@
     grid-template-columns: repeat(3, 360px);
     gap: 40px;
     justify-content: center;
-    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
-    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
     
+    @include m.container-padding;
 }
 
 .cardHeight {

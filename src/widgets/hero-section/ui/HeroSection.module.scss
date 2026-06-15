@@ -5,9 +5,10 @@
 
 .heroWrapper {
   margin-top: 100px;
-  padding-left: f.fluid(120px, 180px, 1440px, 1920px);
-  padding-right: f.fluid(120px, 180px, 1440px, 1920px);
   position: relative;
+
+  @include m.container-padding;
+  
   > img {
     position: absolute;
     right: 120px;

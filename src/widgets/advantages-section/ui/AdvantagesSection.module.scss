@@ -12,10 +12,10 @@
     background-image: url(../../../shared/assets/images/background-images/purple-wave.svg);
     background-repeat: no-repeat;
     background-position: right;
-    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
-    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
     padding-top: 120px;
     padding-bottom: 120px;
+
+    @include m.container-padding;
 
     > h3 {
         grid-column: span 4;
@@ -35,7 +35,8 @@
     @include m.laptop {
         column-gap: 40px;
         row-gap: 30px;
-        padding: 100px 0 117px 0;
+        padding-top: 100px;
+        padding-bottom: 117px;
     }
 
     @include m.tablet {
@@ -44,13 +45,15 @@
         column-gap: 19px;
         row-gap: 20px;
         background-position: bottom;
-        padding: 80px 0 296px 0;
+        padding-top: 80px;
+        padding-bottom: 296px;
     }
 
     @include m.mobile {
         grid-template-columns: 1fr;
         grid-template-rows: 189px repeat(6, 1fr);
         row-gap: 20px;
-        padding: 60px 0 143px 0;
+        padding-top: 60px;
+        padding-bottom: 143px;
     }
 }

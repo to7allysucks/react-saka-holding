@@ -4,14 +4,9 @@
 
 .catalogBar {
     width: 100%;
-    padding-left: f.fluid(120px, 180px, 1440px, 1920px);
-    padding-right: f.fluid(120px, 180px, 1440px, 1920px);
     background: v.$color-blue-dark;
 
-    @include m.laptop {
-        padding-left: f.fluid(39px, 120px, 960px, 1440px);
-        padding-right: f.fluid(39px, 120px, 960px, 1440px);
-    }
+    @include m.container-padding;
 
     @include m.tablet {
         display: none;

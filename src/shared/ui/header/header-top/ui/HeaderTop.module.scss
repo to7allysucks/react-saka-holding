@@ -40,21 +40,20 @@
 }
 
 .headerLogo {
-    width: 7.2917vw;
-    margin-right: 1.5625vw;
+    width: f.fluid(120px, 140px, 1440px, 1920px);
+    margin-right: f.fluid(20px, 30px, 1440px, 1920px);
     
     @include m.laptop {
-        width: 9.7222vw;
-        margin-right: 2.0833vw;
+        width: 120px;
+        margin-right: 20px;
     }
 
     @include m.tablet {
-        width: 12.5vw;
-        margin-right: 2.0833vw;
+        width: f.fluid(86px, 120px, 480px, 960px);
+        margin-right: f.fluid(15px, 20px, 480px, 960px);
     }
 
     @include m.mobile {
-        width: 86px;
         margin-right: 15px;
     }
 }
@@ -65,23 +64,18 @@
     gap: 0.5208vw;
 
     img {
-        width: 3.125vw;
-        height: 3.125vw;
-        object-fit: contain;
+        width: f.fluid(48px, 55px, 1440px, 1920px);
 
         @include m.laptop {
-            width: 3.3333vw;
-            height: 3.3333vw;
+            width: 48px
         }
 
         @include m.tablet {
-            width: 5vw;
-            height: 5vw;
+            width: f.fluid(34px, 48px, 480px, 960px)
         }
 
         @include m.mobile {
             width: 34px;
-            height: 34px;
         }
     }
 
@@ -111,10 +105,10 @@
 .userGroup {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: f.fluid(33px, 40px, 1440px, 1920px);
 
     @include m.laptop {
-        gap: 33px;
+        gap: f.fluid(20px, 33px, 960px, 1440px);
     }
 }
 
@@ -124,9 +118,11 @@
     align-items: center;
     background-color: rgb(255, 255, 255, 0.05);
     border-radius: 50%;
-    min-width: 40px;
-    height: 40px;
+    min-width: f.fluid(30px, 40px, 960px, 1920px);
+    height: f.fluid(30px, 40px, 960px, 1920px);
     position: relative;
+
+
     
     @include m.tablet {
         display: none;
@@ -157,17 +153,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 45px;
+    gap: f.fluid(38px, 45px, 1440px, 1920px);
 
     @include m.laptop {
-        gap: 38px;
+        gap: f.fluid(22px, 38px, 960px, 1440px);
     }
 
     @include m.tablet {
-        display: none;
-    }
-
-    @include m.mobile {
         display: none;
     }
 }
@@ -194,10 +186,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1vw;
+    font-size: f.fluid(20px, 22px, 1440px, 1920px);
     white-space: nowrap;
     font-weight: 600;
     gap: 5px;
+
+    > img {
+        width: f.fluid(16px, 24px, 960px, 1920px);
+    }
+
+    @include m.laptop {
+        font-size: f.fluid(14px, 20px, 960px, 1440px);
+    }
 }
 
 .callbackBtn {
@@ -205,7 +205,7 @@
     font-weight: 300;
     text-align: right;
     transition-duration: v.$transition-duration-default;
-    font-size: 0.8333vw;
+    font-size: f.fluid(10px, 16px, 960px, 1920px);
 
     &:hover {
         color: v.$color-gold;

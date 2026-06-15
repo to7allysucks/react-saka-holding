@@ -4,9 +4,7 @@
 
 .catalogBar {
     width: 100%;
-    background: v.$color-blue-dark;
-
-    @include m.container-padding;
+    background: v.$color-accent;
 
     @include m.tablet {
         display: none;
@@ -14,17 +12,21 @@
 }
 
 .container {
-    margin: 0 auto;
     display: flex;
     align-items: center;
+
+    @include m.container-padding;
 }
 
 .promoBtn {
-    background: v.$color-gold;
+    background: v.$color-secondary;
     color: v.$color-accent !important;
-    font-size: f.to-rem(14);
-    font-weight: bold;
-    padding: 13px 54px 18px 26px;
+    font-size: f.fluid(12px, 14px, 960px, 1920px);
+    font-weight: 700;
+    padding-top: f.fluid(8px, 13px, 960px, 1920px);
+    padding-bottom: f.fluid(12px, 18px, 960px, 1920px);
+    padding-right: f.fluid(48px, 54px, 960px, 1920px);
+    padding-left: f.fluid(20px, 26px, 960px, 1920px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,37 +36,31 @@
 .textureList {
     display: flex;
     align-items: center;
-    gap: 24px;
-    margin-left: 20px;
-    overflow-x: auto;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: f.fluid(10px, 40px, 960px, 1920px);
 }
 
 .textureItem {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: f.fluid(4px, 8px, 960px, 1920px);
     white-space: nowrap;
 
     img {
-        width: 24px;
-        height: 24px;
+        width: f.fluid(16px, 24px, 960px, 1920px);
         border-radius: 50%;
-        object-fit: cover;
     }
 
     span {
-        font-size: f.to-rem(13);
+        font-size: f.fluid(10px, 14px, 960px, 1920px);
         color: v.$color-white;
         transition: color v.$transition-duration-default ease;
     }
 
     &:hover {
         span {
-            color: v.$color-gold;
+            color: v.$color-secondary;
         }
     }
 }

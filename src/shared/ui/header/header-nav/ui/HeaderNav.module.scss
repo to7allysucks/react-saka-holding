@@ -11,8 +11,6 @@
     @include m.container-padding;
 
     @include m.laptop {
-        font-size: f.to-rem(14);
-        
         padding-top: f.fluid(18px, 26px, 960px, 1440px);
         padding-bottom: f.fluid(18px, 26px, 960px, 1440px);
     }
@@ -28,8 +26,12 @@
     .navItem {
         transition-duration: v.$transition-duration-default;
         letter-spacing: v.$letter-spacing-navbar;
-        font-size:  0.8333vw;
-        position: relative;      
+        font-size: f.fluid(14px, 16px, 1440px, 1920px);
+        position: relative;
+        
+        @include m.laptop {
+            font-size: f.fluid(12px, 14px, 960px, 1440px);
+        }
 
         &:hover {
             color: v.$color-gold;
@@ -93,6 +95,6 @@
     gap: 10px;
     
     img {
-        width: 0.6771vw;
+        width: f.fluid(8px, 12px, 960px, 1920px);
     }
 }

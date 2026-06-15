@@ -32,8 +32,3 @@ $letter-spacing-navbar: 7%;
 $line-height-default: 133.4%;
 $line-height-medium: 151.4%;
 $line-height-large: 164.9%;
-
-$padding-inline: calc(120px + (180 - 120) * ((100vw - 1440px) / (1920 - 1440)));
-$padding-inline-laptop: calc(39px + (120 - 39) * ((100vw - 960px) / (1440 - 960)));
-$padding-inline-tablet: calc(30px + (39 - 30) * ((100vw - 480px) / (960 - 480)));
-$padding-inline-mobile: 30px;

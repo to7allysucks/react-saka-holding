@@ -1,5 +1,6 @@
 @use '@styles/variables' as v;
 @use '@styles/functions' as f;
+@use '@styles/mixins' as m;
 
 .container {
     display: block;

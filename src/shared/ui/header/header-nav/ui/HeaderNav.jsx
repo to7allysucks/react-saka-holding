@@ -25,9 +25,9 @@ const HeaderNav = () => {
             
             <NavLink  to={ROUTES.NEWS} className={styles.navItem}>Новости</NavLink>
             
-            <NavLink className={styles.navItem}>Доставка и оплата</NavLink>
+            <NavLink to={'/delivery'} className={styles.navItem} end>Доставка и оплата</NavLink>
             
-            <NavLink className={styles.navItem}>Контакты</NavLink>
+            <NavLink to={'/contacts'} className={styles.navItem} end>Контакты</NavLink>
         </ul>
     </nav>
     )

@@ -29,7 +29,7 @@
         transition-duration: v.$transition-duration-default;
         letter-spacing: v.$letter-spacing-navbar;
         font-size:  0.8333vw;
-        
+        position: relative;      
 
         &:hover {
             color: v.$color-gold;
@@ -38,6 +38,10 @@
                 transform: rotate(180deg);
                 filter: brightness(0) saturate(100%) invert(98%) sepia(4%) saturate(5035%) hue-rotate(318deg) brightness(88%) contrast(96%);
             }
+        }
+
+        &:global(.active) {
+        color: v.$color-secondary;
         }
     }
 }

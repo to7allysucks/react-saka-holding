@@ -25,9 +25,12 @@ const HeaderNav = () => {
             
             <NavLink  to={ROUTES.NEWS} className={styles.navItem}>Новости</NavLink>
             
-            <NavLink to={'/delivery'} className={styles.navItem} end>Доставка и оплата</NavLink>
-            
-            <NavLink to={'/contacts'} className={styles.navItem} end>Контакты</NavLink>
+            <button 
+                className={styles.navItem} 
+                onClick={() => {/* */}}>
+                Доставка и оплата
+            </button>
+            <a href="#footer" className={styles.navItem}>Контакты</a>
         </ul>
     </nav>
     )

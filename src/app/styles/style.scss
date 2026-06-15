@@ -11,6 +11,10 @@
   line-height: variables.$line-height-default;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2 {
   font-size: functions.to-rem(36);
   font-weight: 600;

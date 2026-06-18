@@ -4,7 +4,8 @@
 
 
 .heroWrapper {
-  margin-top: 100px;
+  margin-top: f.fluid(96px, 100px, 1440px, 1920px);
+  margin-bottom: 40px;
   position: relative;
 
   @include m.container-padding;
@@ -17,7 +18,17 @@
   }
 
   @include m.laptop {
-    margin-top: 96px;
+    margin-top: f.fluid(40px, 96px, 960px, 1440px);
+    margin-bottom: f.fluid(60px, 40px, 960px, 1440px);
+  }
+
+  @include m.tablet {
+    margin-top: 40px;
+    margin-bottom: f.fluid(40px, 60px, 480px, 960px);
+  }
+
+  @include m.mobile {
+    margin-bottom: 40px;
   }
 }
 

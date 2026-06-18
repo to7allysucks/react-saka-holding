@@ -5,6 +5,7 @@ import Header from "../../widgets/header";
 import AboutPage from "../../pages/about";
 import CatalogPage from '../../pages/catalog';
 import NewsPage from "../../pages/news";
+import FabricPage from "../../pages/fabric/ui/FabricPage.jsx";
 
 const Layout = ({children}) => {
   return (
@@ -27,6 +28,9 @@ const router = createBrowserRouter([
   },
   {
     path: ROUTES.NEWS, element: <Layout><NewsPage /></Layout>
+  },
+  {
+    path: ROUTES.CARD, element: <Layout><FabricPage /></Layout>
   },
 ])
 

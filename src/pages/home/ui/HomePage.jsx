@@ -12,13 +12,10 @@ const HomePage = () => {
     return (
         <div className={styles.home}>
             <HeroSection />
+            <PlacesSection />
             <SakaSection />
             <Certificates />
-            <AdvantagesSection />
-            <CalculatePriceSection />
-            <PlacesSection />
             <CardsSection />
-            <ReviewsSection />
         </div>
     )
 }

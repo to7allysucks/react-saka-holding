@@ -23,8 +23,24 @@
     width: 100%;
     max-width: 1160px;
     align-items: center;
-    padding: 40px 60px 40px 60px;
+    padding: 40px 60px;
     border-radius: 16px;
+
+    @include m.laptop {
+        max-width: 100%;
+        padding: 30px 40px;
+    }
+
+    @include m.tablet {
+        padding: 24px 24px;
+        border-radius: 12px;
+    }
+
+    @include m.mobile {
+        padding: 20px 16px;
+        border-radius: 10px;
+        gap: 16px;
+    }
 }
 
 .resultWrapper {
@@ -32,9 +48,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba( #ffffff, 0.05);
+    background-color: rgba(#ffffff, 0.05);
     border-radius: 16px;
     gap: 52px;
+    width: 100%;
+
+    @include m.tablet {
+        padding: 24px 28px;
+        gap: 32px;
+    }
+
+    @include m.mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 20px;
+        gap: 20px;
+        border-radius: 12px;
+    }
 }
 
 .resultScore {
@@ -56,9 +86,27 @@
         & > span {
             width: 80%;
         }
+
+        @include m.tablet {
+            font-size: 18px;
+            gap: 16px;
+        }
+
+        @include m.mobile {
+            font-size: 16px;
+            gap: 12px;
+        }
     }
 }
 
 .resultPrice {
     font-size: 64px;
+
+    @include m.tablet {
+        font-size: 48px;
+    }
+
+    @include m.mobile {
+        font-size: 36px;
+    }
 }

@@ -1,6 +1,8 @@
+import CatalogSection from "../../../widgets/catalog/ui/CatalogSection.jsx";
+
 const CatalogPage = () => {
     return (
-        <div>CatalogPage</div>
+        <CatalogSection />
     )
 }
 

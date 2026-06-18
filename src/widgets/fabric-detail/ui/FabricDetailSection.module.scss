@@ -1,0 +1,480 @@
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
+
+.section {
+    max-width: 1400px;
+    margin: 95px auto;
+    padding: 0 120px 80px;
+
+    @include m.laptop {
+        padding: 0 60px 60px;
+    }
+
+    @include m.tablet {
+        padding: 0 30px 60px;
+    }
+
+    @include m.mobile {
+        padding: 0 16px 40px;
+    }
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: v.$color-dark-grey;
+
+    a {
+        color: v.$color-dark-grey;
+        text-decoration: none;
+        transition: color v.$transition-duration-fast;
+        &:hover { color: v.$color-accent; }
+    }
+
+    span:last-child {
+        color: v.$color-accent;
+        font-weight: 600;
+    }
+}
+
+.sep { color: v.$color-grey; }
+
+/* Layout — два столбца */
+.layout {
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    gap: 80px;
+    align-items: start;
+
+    @include m.laptop {
+        grid-template-columns: 420px 1fr;
+        gap: 48px;
+    }
+
+    @include m.tablet {
+        grid-template-columns: 280px 1fr;
+        gap: 24px;
+    }
+
+    @include m.mobile {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ── LEFT col ── */
+.imageCol {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mainImage {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: v.$color-light-grey;
+    flex-shrink: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    @include m.laptop {
+        height: 420px;
+    }
+
+    @include m.tablet {
+        height: 280px;
+        border-radius: 16px;
+    }
+
+    @include m.mobile {
+        height: 280px;
+        border-radius: 14px;
+    }
+}
+
+.badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: v.$color-accent;
+    color: v.$color-white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    pointer-events: none;
+}
+.thumbsWrapper {
+    width: 100%;
+    position: relative;
+
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+        width: 28px;
+        height: 28px;
+        background: v.$color-white;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+        color: v.$color-accent;
+        top: 70%;
+        transform: translateY(-50%);
+        background-image: url('../../../shared/assets/icons/arrow_sertif-slider.svg') !important;
+        background-position: center center;
+        &::after {
+            font-size: 10px;
+            font-weight: 700;
+        }
+    }
+
+    :global(.swiper-button-prev) {
+        left: 0;
+        transform: rotate(180deg);
+        top: 57%;
+    }
+    :global(.swiper-button-next) { right: 0; }
+}
+
+.swiper {
+    padding: 0 36px !important;
+
+    @include m.tablet {
+        padding: 0 24px !important;
+    }
+}
+
+.thumb {
+    display: block;
+    width: 100%;
+    height: 90px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    transition: border-color v.$transition-duration-fast;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    @include m.tablet {
+        height: 60px;
+    }
+
+    @include m.mobile {
+        height: 70px;
+    }
+}
+
+.thumbActive {
+    border-color: v.$color-secondary;
+}
+
+.infoCol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include m.laptop {
+        width: 350px;
+    }
+
+    @include m.tablet {
+        gap: 14px;
+        padding-top: 0;
+    }
+}
+
+.name {
+    font-size: 36px;
+    font-weight: 700;
+    color: v.$color-accent;
+    line-height: 1.15;
+
+    @include m.laptop { font-size: 30px; }
+    @include m.tablet { font-size: 24px; }
+    @include m.mobile { font-size: 22px; }
+}
+
+.priceRow {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 700;
+    color: v.$color-secondary;
+
+    @include m.tablet {
+        font-size: 22px;
+    }
+}
+
+.priceUnit {
+    font-size: 13px;
+    color: v.$color-dark-grey;
+}
+
+/* Colors */
+.colorsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.colorsLabel {
+    font-size: 14px;
+    font-weight: 600;
+    color: v.$color-accent;
+}
+
+.colorSwatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.swatch {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 0;
+    transition: border-color v.$transition-duration-fast, transform v.$transition-duration-fast;
+
+    &:hover { transform: scale(1.15); }
+}
+
+.swatchActive {
+    border-color: v.$color-accent !important;
+}
+
+.swatchWhite {
+    border-color: v.$color-grey;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include m.tablet {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    @include m.mobile {
+        flex-wrap: wrap;
+    }
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: v.$color-light-grey;
+    border-radius: 12px;
+    padding: 12px 18px;
+    flex-shrink: 0;
+
+    @include m.tablet {
+        width: fit-content;
+        align-self: center;
+    }
+}
+
+.counterBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity v.$transition-duration-fast;
+
+    &:hover { opacity: 1; }
+}
+
+.minus {
+    display: block;
+    width: 14px;
+    height: 2px;
+    background: v.$color-accent;
+    border-radius: 2px;
+}
+
+.plus {
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        background: v.$color-accent;
+        border-radius: 2px;
+    }
+
+    &::before {
+        width: 14px;
+        height: 2px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        width: 2px;
+        height: 14px;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+}
+
+.counterVal {
+    font-size: 16px;
+    font-weight: 600;
+    color: v.$color-accent;
+    min-width: 20px;
+    text-align: center;
+}
+
+.addBtn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 30px;
+    background: v.$color-secondary;
+    color: v.$color-white;
+    font-family: v.$font-main;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background v.$transition-duration-default;
+    white-space: nowrap;
+
+    &:hover { background: v.$color-gold; }
+
+    @include m.tablet {
+        width: 100%;
+    }
+
+    @include m.mobile { flex: 1 0 100%; }
+}
+
+.characteristics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.charTitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: v.$color-accent;
+    margin-bottom: 12px;
+}
+
+.charList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.charRow {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 8px;
+
+    @include m.tablet {
+        grid-template-columns: 120px 1fr;
+    }
+
+    @include m.mobile {
+        grid-template-columns: 110px 1fr;
+    }
+}
+
+.charLabel {
+    font-size: 12px;
+    color: v.$color-dark-grey;
+}
+
+.charValue {
+    font-size: 12px;
+    font-weight: 500;
+    color: v.$color-accent;
+}
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid v.$color-grey;
+    border-top-color: v.$color-secondary;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.error {
+    text-align: center;
+    padding: 60px;
+    color: v.$color-dark-grey;
+    font-size: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include m.laptop {
+        flex-direction: column;
+    }
+}
+
+.sep {
+    display: flex;
+    flex-direction:  column;
+    gap: 35px;
+}

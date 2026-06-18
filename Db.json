@@ -1,0 +1,358 @@
+{
+  "fabrics": [
+    {
+      "id": 1,
+      "name": "Кулинарная гладь",
+      "price": 13,
+      "currency": "$",
+      "width": 180,
+      "type": "Кулинарная гладь",
+      "quality": "Премиум",
+      "color": "white",
+      "colorHex": "#e8e8e8",
+      "image": "https://placehold.co/400x300",
+      "isNew": true,
+      "characteristics": {
+        "material": "Хлопок",
+        "quality": "Хорошен",
+        "composition": "92%х6+8%лайкра",
+        "density": "Плотная",
+        "rollWidth": "150см",
+        "per1kg": "1 метр",
+        "per1roll": "1 рулон",
+        "production": "Турция"
+      },
+      "variants": [
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300" },
+        { "color": "darkGreen",  "colorHex": "#007c7a", "image": "https://placehold.co/400x300" },
+        { "color": "blue",       "colorHex": "#263669", "image": "https://placehold.co/400x300" },
+        { "color": "lightBlue",  "colorHex": "#4a7ab8", "image": "https://placehold.co/400x300" },
+        { "color": "orange",     "colorHex": "#fc8b23", "image": "https://placehold.co/400x300" },
+        { "color": "yellow",     "colorHex": "#f5dc41", "image": "https://placehold.co/400x300" },
+        { "color": "redPurple",  "colorHex": "#b2092c", "image": "https://placehold.co/400x300" },
+        { "color": "gentle",     "colorHex": "#b5a0c9", "image": "https://placehold.co/400x300" },
+        { "color": "darkGrey",   "colorHex": "#848381", "image": "https://placehold.co/400x300" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Рибана стрейч",
+      "price": 18.5,
+      "currency": "$",
+      "width": 160,
+      "type": "Рибана",
+      "quality": "Премиум",
+      "color": "darkGreen",
+      "colorHex": "#007c7a",
+      "image": "https://placehold.co/400x300",
+      "isNew": true,
+      "characteristics": {
+        "material": "Хлопок/Эластан",
+        "quality": "Премиум",
+        "composition": "95%хлопок+5%эластан",
+        "density": "Средняя",
+        "rollWidth": "160см",
+        "per1kg": "1.2 метра",
+        "per1roll": "1 рулон",
+        "production": "Россия"
+      },
+      "variants": [
+        { "color": "darkGreen",  "colorHex": "#007c7a", "image": "https://placehold.co/400x300/007c7a" },
+        { "color": "blue",       "colorHex": "#263669", "image": "https://placehold.co/400x300/263669" },
+        { "color": "orange",     "colorHex": "#fc8b23", "image": "https://placehold.co/400x300/fc8b23" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "redPurple",  "colorHex": "#b2092c", "image": "https://placehold.co/400x300/b2092c" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Футер 2х нитка",
+      "price": 9.9,
+      "currency": "$",
+      "width": 180,
+      "type": "Футер 2х нитка",
+      "quality": "Стандарт",
+      "color": "blue",
+      "colorHex": "#263669",
+      "image": "https://placehold.co/400x300",
+      "isNew": false,
+      "characteristics": {
+        "material": "Хлопок",
+        "quality": "Стандарт",
+        "composition": "100%хлопок",
+        "density": "Лёгкая",
+        "rollWidth": "180см",
+        "per1kg": "0.9 метра",
+        "per1roll": "1 рулон",
+        "production": "Китай"
+      },
+      "variants": [
+        { "color": "blue",       "colorHex": "#263669", "image": "https://placehold.co/400x300/263669" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "darkGrey",   "colorHex": "#848381", "image": "https://placehold.co/400x300/848381" },
+        { "color": "yellow",     "colorHex": "#f5dc41", "image": "https://placehold.co/400x300/f5dc41" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Пике классик",
+      "price": 15.2,
+      "currency": "$",
+      "width": 180,
+      "type": "Пике",
+      "quality": "Премиум",
+      "color": "white",
+      "colorHex": "#e8e8e8",
+      "image": "https://placehold.co/400x300",
+      "isNew": false,
+      "characteristics": {
+        "material": "Хлопок/Полиэстер",
+        "quality": "Премиум",
+        "composition": "60%хлопок+40%полиэстер",
+        "density": "Плотная",
+        "rollWidth": "180см",
+        "per1kg": "1.1 метра",
+        "per1roll": "1 рулон",
+        "production": "Турция"
+      },
+      "variants": [
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "lightBlue",  "colorHex": "#4a7ab8", "image": "https://placehold.co/400x300/4a7ab8" },
+        { "color": "gentle",     "colorHex": "#b5a0c9", "image": "https://placehold.co/400x300/b5a0c9" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Интерлок плотный",
+      "price": 19.9,
+      "currency": "$",
+      "width": 180,
+      "type": "Интерлок",
+      "quality": "Премиум",
+      "color": "yellow",
+      "colorHex": "#f5dc41",
+      "image": "https://placehold.co/400x300",
+      "isNew": true,
+      "characteristics": {
+        "material": "Хлопок",
+        "quality": "Премиум",
+        "composition": "100%хлопок",
+        "density": "Очень плотная",
+        "rollWidth": "180см",
+        "per1kg": "0.8 метра",
+        "per1roll": "1 рулон",
+        "production": "Турция"
+      },
+      "variants": [
+        { "color": "yellow",     "colorHex": "#f5dc41", "image": "https://placehold.co/400x300/f5dc41" },
+        { "color": "orange",     "colorHex": "#fc8b23", "image": "https://placehold.co/400x300/fc8b23" },
+        { "color": "darkGreen",  "colorHex": "#007c7a", "image": "https://placehold.co/400x300/007c7a" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "blue",       "colorHex": "#263669", "image": "https://placehold.co/400x300/263669" },
+        { "color": "redPurple",  "colorHex": "#b2092c", "image": "https://placehold.co/400x300/b2092c" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Кашкорсе к 2х нитке",
+      "price": 22,
+      "currency": "$",
+      "width": 180,
+      "type": "Кашкорсе к 2х нитке",
+      "quality": "Премиум",
+      "color": "orange",
+      "colorHex": "#fc8b23",
+      "image": "https://placehold.co/400x300",
+      "isNew": true,
+      "characteristics": {
+        "material": "Хлопок/Эластан",
+        "quality": "Премиум",
+        "composition": "97%хлопок+3%эластан",
+        "density": "Средняя",
+        "rollWidth": "180см",
+        "per1kg": "1 метр",
+        "per1roll": "1 рулон",
+        "production": "Россия"
+      },
+      "variants": [
+        { "color": "orange",     "colorHex": "#fc8b23", "image": "https://placehold.co/400x300/fc8b23" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "darkGreen",  "colorHex": "#007c7a", "image": "https://placehold.co/400x300/007c7a" },
+        { "color": "gentle",     "colorHex": "#b5a0c9", "image": "https://placehold.co/400x300/b5a0c9" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Double Face люкс",
+      "price": 55,
+      "currency": "$",
+      "width": 150,
+      "type": "Double Face",
+      "quality": "Премиум",
+      "color": "darkGreen",
+      "colorHex": "#007c7a",
+      "image": "https://placehold.co/400x300",
+      "isNew": true,
+      "characteristics": {
+        "material": "Шерсть/Кашемир",
+        "quality": "Люкс",
+        "composition": "70%шерсть+30%кашемир",
+        "density": "Плотная",
+        "rollWidth": "150см",
+        "per1kg": "0.7 метра",
+        "per1roll": "1 рулон",
+        "production": "Италия"
+      },
+      "variants": [
+        { "color": "darkGreen",  "colorHex": "#007c7a", "image": "https://placehold.co/400x300/007c7a" },
+        { "color": "blue",       "colorHex": "#263669", "image": "https://placehold.co/400x300/263669" },
+        { "color": "redPurple",  "colorHex": "#b2092c", "image": "https://placehold.co/400x300/b2092c" },
+        { "color": "darkGrey",   "colorHex": "#848381", "image": "https://placehold.co/400x300/848381" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Футер 3х нитка",
+      "price": 12.5,
+      "currency": "$",
+      "width": 180,
+      "type": "Футер 3х нитка",
+      "quality": "Стандарт",
+      "color": "lightBlue",
+      "colorHex": "#4a7ab8",
+      "image": "https://placehold.co/400x300",
+      "isNew": false,
+      "characteristics": {
+        "material": "Хлопок",
+        "quality": "Стандарт",
+        "composition": "100%хлопок",
+        "density": "Средняя",
+        "rollWidth": "180см",
+        "per1kg": "1 метр",
+        "per1roll": "1 рулон",
+        "production": "Китай"
+      },
+      "variants": [
+        { "color": "lightBlue",  "colorHex": "#4a7ab8", "image": "https://placehold.co/400x300/4a7ab8" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "darkGrey",   "colorHex": "#848381", "image": "https://placehold.co/400x300/848381" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Кашкорсе к 3х нитке",
+      "price": 27,
+      "currency": "$",
+      "width": 180,
+      "type": "Кашкорсе к 3х нитке",
+      "quality": "Премиум",
+      "color": "redPurple",
+      "colorHex": "#b2092c",
+      "image": "https://placehold.co/400x300",
+      "isNew": true,
+      "characteristics": {
+        "material": "Хлопок/Эластан",
+        "quality": "Премиум",
+        "composition": "95%хлопок+5%эластан",
+        "density": "Плотная",
+        "rollWidth": "180см",
+        "per1kg": "0.9 метра",
+        "per1roll": "1 рулон",
+        "production": "Россия"
+      },
+      "variants": [
+        { "color": "redPurple",  "colorHex": "#b2092c", "image": "https://placehold.co/400x300/b2092c" },
+        { "color": "blue",       "colorHex": "#263669", "image": "https://placehold.co/400x300/263669" },
+        { "color": "darkGreen",  "colorHex": "#007c7a", "image": "https://placehold.co/400x300/007c7a" },
+        { "color": "orange",     "colorHex": "#fc8b23", "image": "https://placehold.co/400x300/fc8b23" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Интерлок стрейч",
+      "price": 22,
+      "currency": "$",
+      "width": 180,
+      "type": "Интерлок",
+      "quality": "Премиум",
+      "color": "gentle",
+      "colorHex": "#b5a0c9",
+      "image": "https://placehold.co/400x300",
+      "isNew": false,
+      "characteristics": {
+        "material": "Хлопок/Лайкра",
+        "quality": "Премиум",
+        "composition": "92%хлопок+8%лайкра",
+        "density": "Средняя",
+        "rollWidth": "180см",
+        "per1kg": "1 метр",
+        "per1roll": "1 рулон",
+        "production": "Турция"
+      },
+      "variants": [
+        { "color": "gentle",     "colorHex": "#b5a0c9", "image": "https://placehold.co/400x300/b5a0c9" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "yellow",     "colorHex": "#f5dc41", "image": "https://placehold.co/400x300/f5dc41" },
+        { "color": "lightBlue",  "colorHex": "#4a7ab8", "image": "https://placehold.co/400x300/4a7ab8" },
+        { "color": "orange",     "colorHex": "#fc8b23", "image": "https://placehold.co/400x300/fc8b23" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Рибана меланж",
+      "price": 16.5,
+      "currency": "$",
+      "width": 160,
+      "type": "Рибана",
+      "quality": "Стандарт",
+      "color": "darkGrey",
+      "colorHex": "#848381",
+      "image": "https://placehold.co/400x300",
+      "isNew": false,
+      "characteristics": {
+        "material": "Хлопок/Полиэстер",
+        "quality": "Стандарт",
+        "composition": "80%хлопок+20%полиэстер",
+        "density": "Лёгкая",
+        "rollWidth": "160см",
+        "per1kg": "1.2 метра",
+        "per1roll": "1 рулон",
+        "production": "Китай"
+      },
+      "variants": [
+        { "color": "darkGrey",   "colorHex": "#848381", "image": "https://placehold.co/400x300/848381" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" },
+        { "color": "blue",       "colorHex": "#263669", "image": "https://placehold.co/400x300/263669" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Пике жаккард",
+      "price": 24,
+      "currency": "$",
+      "width": 180,
+      "type": "Пике",
+      "quality": "Премиум",
+      "color": "redPurple",
+      "colorHex": "#b2092c",
+      "image": "https://placehold.co/400x300",
+      "isNew": false,
+      "characteristics": {
+        "material": "Хлопок",
+        "quality": "Премиум",
+        "composition": "100%хлопок",
+        "density": "Плотная",
+        "rollWidth": "180см",
+        "per1kg": "0.9 метра",
+        "per1roll": "1 рулон",
+        "production": "Турция"
+      },
+      "variants": [
+        { "color": "redPurple",  "colorHex": "#b2092c", "image": "https://placehold.co/400x300/b2092c" },
+        { "color": "darkGreen",  "colorHex": "#007c7a", "image": "https://placehold.co/400x300/007c7a" },
+        { "color": "white",      "colorHex": "#e8e8e8", "image": "https://placehold.co/400x300/e8e8e8" }
+      ]
+    }
+  ]
+}

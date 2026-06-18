@@ -1,0 +1,153 @@
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
+
+.section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 120px 80px;
+
+    @include m.laptop {
+        padding: 0 60px 60px;
+    }
+
+    @include m.tablet {
+        padding: 0 30px 60px;
+    }
+
+    @include m.mobile {
+        padding: 0 16px 40px;
+    }
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: v.$color-dark-grey;
+    padding: 24px 0 16px;
+
+    a {
+        color: v.$color-dark-grey;
+        text-decoration: none;
+        transition: color v.$transition-duration-fast;
+
+        &:hover { color: v.$color-accent; }
+    }
+}
+
+.sep {
+    color: v.$color-grey;
+}
+
+.pageTitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: v.$color-accent;
+    margin-bottom: 32px;
+
+    @include m.tablet {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    @include m.mobile {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    align-items: start;
+
+    @include m.tablet {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+
+.right {}
+
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 24px;
+}
+
+.sortLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: v.$color-dark-grey;
+}
+
+.sortSelect {
+    background: none;
+    border: none;
+    font-family: v.$font-main;
+    font-size: 13px;
+    font-weight: 600;
+    color: v.$color-accent;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding-right: 18px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%2319242f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @include m.laptop {
+        gap: 20px;
+    }
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    @include m.mobile {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+
+.empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: v.$color-dark-grey;
+    font-size: 15px;
+}
+
+.error {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: rgba(#b2092c, 0.08);
+    border-radius: 8px;
+    color: #b2092c;
+    font-size: 13px;
+}
+
+
+.sentinel {
+    height: 40px;
+}

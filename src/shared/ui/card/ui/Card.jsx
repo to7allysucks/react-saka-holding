@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import GoldBtn from "../../buttons/gold-btn/GoldBtn";
 import styles from "./Card.module.scss";
 import imgArrow from '../../../assets/icons/arrow-cloth-slider.svg'
 
 const Card = (props) => {
     const {
+        id,
         title,
         price,
         width,
@@ -27,8 +29,9 @@ const Card = (props) => {
           <span className={styles.price}>{`${price}$`}</span>
           <span className={styles.width}>{`${width} см`}</span>
         </div>
-
-        <GoldBtn img={imgArrow}  className={styles.btnCard} type="button">Подробнее</GoldBtn>
+        <Link to={`/catalog/${id}`}>
+          <GoldBtn img={imgArrow}  className={styles.btnCard} type="button">Подробнее</GoldBtn>
+        </Link>
       </div>
     </article>
   );

@@ -1,5 +1,5 @@
 @use '@styles/variables' as v;
-
+@use '@styles/mixins' as m;
 
 .chooseParamsContainter {
     display: flex;
@@ -9,6 +9,20 @@
     background-color: v.$color-blue-light;
     padding: 30px 40px;
     border-radius: 16px;
+
+    @include m.tablet {
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 24px 28px;
+    }
+
+    @include m.mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 16px;
+        gap: 20px;
+        border-radius: 12px;
+    }
 }
 
 .pricesContainer {
@@ -17,6 +31,19 @@
     gap: 32px;
     justify-content: start;
     min-width: 150px;
+
+    @include m.tablet {
+        flex-direction: row;
+        gap: 16px;
+        min-width: unset;
+        flex-wrap: wrap;
+    }
+
+    @include m.mobile {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
 }
 
 .counterCloth {
@@ -29,6 +56,10 @@
         border-radius: 16px;
         position: relative;
         background-color: rgb(v.$color-white, 0.05);
+    }
+
+    @include m.mobile {
+        gap: 12px;
     }
 }
 
@@ -66,12 +97,21 @@
 .clothWatchCounter {
     padding: 20px 40px;
     background-color: rgb(v.$color-white, 0.05);
-    color: v.$color-accent;
     border-radius: 16px;
     width: 100%;
     max-width: 256px;
     outline: none;
     color: v.$color-white;
+
+    @include m.tablet {
+        max-width: 200px;
+        padding: 16px 24px;
+    }
+
+    @include m.mobile {
+        max-width: 100%;
+        padding: 14px 16px;
+    }
 }
 
 .enterParamsContainer {
@@ -79,13 +119,21 @@
     flex-direction: column;
     gap: 30px;
     align-self: flex-start;
+
+    @include m.tablet {
+        width: 100%;
+    }
+
+    @include m.mobile {
+        gap: 20px;
+        width: 100%;
+    }
 }
 
 .viewCloth {
     width: 100%;
     height: 100%;
 }
-
 
 .clothWrapper {
     display: flex;
@@ -95,6 +143,17 @@
     align-items: center;
     background-color: v.$color-accent;
     border-radius: 16px;
+
+    @include m.tablet {
+        width: 100%;
+        height: 260px;
+    }
+
+    @include m.mobile {
+        width: 100%;
+        height: 200px;
+        border-radius: 12px;
+    }
 }
 
 .variants {
@@ -115,6 +174,16 @@
     appearance: none;
     outline: 0;
     max-width: 400px;
+
+    @include m.tablet {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @include m.mobile {
+        padding: 14px 16px;
+        border-radius: 12px;
+    }
 }
 
 .clothOption {

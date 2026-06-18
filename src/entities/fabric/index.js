@@ -1,0 +1,1 @@
+export { fetchFabrics } from './api/fabricApi.js'

@@ -28,17 +28,14 @@
 
     > p {
         text-align: center;
-        max-width: 220px;
         color: v.$color-accent;
         line-height: 150%;
-        font-size: f.to-rem(16);
+        font-size: f.fluid(14px, 16px, 1440px, 1920px);
+        width: 100%;
 
         @include m.laptop {
             font-size: f.to-rem(14);
         }
 
-        @include m.tablet {
-            max-width: 271px;
-        }
     }
 }

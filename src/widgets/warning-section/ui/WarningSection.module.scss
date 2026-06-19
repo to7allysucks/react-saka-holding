@@ -1,0 +1,67 @@
+@use '@styles/variables' as v;
+@use '@styles/functions' as f;
+@use '@styles/mixins' as m;
+
+.warningSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: f.fluid(25px, 60px, 960px, 1920px);
+    margin-bottom: f.fluid(20px, 50px, 960px, 1440px);
+    
+    @include m.container-padding;
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 560px;
+        grid-template-rows: auto 1fr;
+        row-gap: 40px;
+        justify-content: center;
+    }
+
+    > h3 {
+        flex: 1;
+    }
+
+    > div {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #ffffff;
+        flex: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border: 1.5px solid transparent;
+            border-radius: 16px;
+            background: repeating-linear-gradient(
+            45deg, 
+            v.$color-secondary, v.$color-secondary 10px, 
+            transparent 10px, transparent 20px
+            ) border-box;
+            -webkit-mask: 
+            linear-gradient(v.$color-white 0 0) padding-box, 
+            linear-gradient(v.$color-white 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        > p {
+            color: v.$color-accent;
+            font-size: 16px;
+            height: auto;
+
+            span {
+                font-size: 16px;
+                color: v.$color-accent;
+                font-weight: 500;
+        }
+        }
+    }
+}

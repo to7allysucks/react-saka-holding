@@ -6,12 +6,14 @@ import AboutPage from "../../pages/about";
 import CatalogPage from '../../pages/catalog';
 import NewsPage from "../../pages/news";
 import FabricPage from "../../pages/fabric/ui/FabricPage.jsx";
+import Footer from "../../widgets/footer"
 
 const Layout = ({children}) => {
   return (
     <>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
     )
 }

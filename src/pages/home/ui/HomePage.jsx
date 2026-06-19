@@ -1,10 +1,8 @@
 import HeroSection from '../../../widgets/hero-section'
-import CalculatePriceSection from '../../../widgets/calculate-price-section'
 import SakaSection from '../../../widgets/saka-tekstil-section/ui/SakaSection' 
 import Certificates from '../../../widgets/certificates-section'
-import AdvantagesSection from '../../../widgets/advantages-section'
 import PlacesSection from '../../../widgets/places-section'
-import ReviewsSection from '../../../widgets/reviews-section/ui/ReviewsSection'
+import WarningSection from '../../../widgets/warning-section'
 import CardsSection from '../../../widgets/cards-section'
 import styles from './HomePage.module.scss'
 
@@ -15,6 +13,7 @@ const HomePage = () => {
             <PlacesSection />
             <SakaSection />
             <Certificates />
+            <WarningSection />
             <CardsSection />
         </div>
     )

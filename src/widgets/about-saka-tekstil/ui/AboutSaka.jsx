@@ -41,9 +41,7 @@ const AboutSaka = () => {
             Главная
           </a>
 
-          <span className={styles.breadcrumbSeparator} aria-hidden="true">
-            =-=
-          </span>
+          <span className={styles.dot}>›</span>
 
           <span className={styles.breadcrumbCurrent}>О компании</span>
         </nav>

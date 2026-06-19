@@ -1,0 +1,17 @@
+@use "@styles/variables" as v;
+
+.news {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+  box-sizing: border-box;
+  background-color: v.$color-white;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .news {
+    padding: 0 16px 40px;
+  }
+}

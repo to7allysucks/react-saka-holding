@@ -11,38 +11,70 @@
   width: 100%;
   margin: 0 auto;
 }
-
 .breadcrumbs {
   display: flex;
   align-items: center;
   gap: 14px;
   margin-bottom: 19px;
+<<<<<<< Updated upstream
   font-size: f.to-rem(8);
+=======
+  font-size: 12px;
+>>>>>>> Stashed changes
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .breadcrumbLink {
+<<<<<<< Updated upstream
   color: v.$color-light-grey;
+=======
+  font-size: 12px;
+  color: v.$color-grey;
+>>>>>>> Stashed changes
   text-decoration: none;
   transition: color v.$transition-duration-default ease;
 
   &:hover {
+<<<<<<< Updated upstream
     color: v.$color-secondary;
   }
 
   &:focus-visible {
     outline: 2px solid v.$color-secondary;
+=======
+    color: v.$color-blue-dark;
+  }
+
+  &:focus-visible {
+    outline: 2px solid v.$color-blue-dark;
+>>>>>>> Stashed changes
     outline-offset: 3px;
   }
 }
 
+<<<<<<< Updated upstream
 .breadcrumbSeparator {
   color: v.$color-light-grey;
 }
 
+=======
+>>>>>>> Stashed changes
 .breadcrumbCurrent {
   color: v.$color-accent;
+}
+
+.dot {
+  opacity: 1;
+  font-size: 12px;
+    &:hover {
+    color: v.$color-blue-dark;
+  }
+
+  &:focus-visible {
+    outline: 2px solid v.$color-blue-dark;
+    outline-offset: 3px;
+  }
 }
 
 .pageTitle {

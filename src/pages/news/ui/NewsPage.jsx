@@ -1,10 +1,12 @@
+import styles from "./NewsPage.module.scss"
 import PlacesSection from "../../../widgets/places-section"
+import PresentationSaka from '../../../widgets/presentation-saka'
 
 const NewsPage = () => {
     return (
-        <div>
-            <PlacesSection />
-        </div>
+            <div className={styles.news}>
+                <PresentationSaka />
+            </div>
     )
 }
 

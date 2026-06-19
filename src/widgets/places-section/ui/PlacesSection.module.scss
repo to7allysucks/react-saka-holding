@@ -2,16 +2,17 @@
 @use '@styles/mixins' as m;
 @use '@styles/functions' as f;
 
-
 .placesContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(f.to-rem(320), 1fr));
+    gap: f.fluid(20px, 40px, 480px, 1920px);
     justify-content: center;
-    
     @include m.container-padding;
 }
 
 .cardHeight {
-    height: 400px;
+    height: auto;
+    min-height: f.fluid(360px, 400px, 480px, 1920px);
+    display: flex;
+    flex-direction: column;
 }

@@ -49,11 +49,18 @@ const PlacesSection = () => {
 
     return (
         <div className={styles.placesContainer}>
-            {MOCK_CARD.map(card => 
-                <NewsCard title={card.title} description={card.description} image={card.image} date={card.date} className={styles.cardHeight} />
+            {MOCK_CARD.map((card, index) => 
+                <NewsCard 
+                    key={`${card.title}-${index}`}
+                    title={card.title} 
+                    description={card.description} 
+                    image={card.image} 
+                    date={card.date} 
+                    className={styles.cardHeight} 
+                />
             )}
         </div>
     )
 }
 
-export default PlacesSection
+export default PlacesSection;

@@ -1,6 +1,10 @@
+import PlacesSection from "../../../widgets/places-section"
+
 const NewsPage = () => {
     return (
-        <div>NewsPage</div>
+        <div>
+            <PlacesSection />
+        </div>
     )
 }
 

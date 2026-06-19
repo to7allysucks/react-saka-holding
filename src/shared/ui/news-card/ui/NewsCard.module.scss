@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
-  min-height: 360px;
+  min-height: f.fluid(360px, 400px, 480px, 1920px);
   border-radius: 16px;
   overflow: hidden;
   background-color: v.$color-accent;
@@ -17,7 +17,7 @@
 
   &:hover {
     .arrowButton {
-      background-color: #d1b47b;
+      background-color: v.$color-secondary;
     }
   }
 }
@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 55%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -43,53 +43,62 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60%;
-  background: linear-gradient(to bottom, rgb(26, 34, 45, 0) 0%, v.$color-accent 100%);
+  height: 100%;
+  background: linear-gradient(
+    to bottom, 
+    rgba(25, 34, 44, 0) 0%, 
+    rgba(25, 34, 44, 0) 45%, 
+    rgba(25, 34, 44, 0.7) 70%, 
+    v.$color-accent 100%
+  );
 }
 
 .arrowButton {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: f.fluid(16px, 20px, 480px, 1920px);
+  right: f.fluid(16px, 20px, 480px, 1920px);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: f.fluid(40px, 50px, 480px, 1920px);
+  height: f.fluid(40px, 50px, 480px, 1920px);
   background-color: v.$color-gold;
   border-radius: 50%;
-  color: v.$color-accent;
   transition: background-color v.$transition-duration-fast;
   z-index: 2;
 
   img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
     transform: rotate(-45deg);
   }
 }
 
 .content {
   position: relative;
-  padding: 24px;
+  padding: f.fluid(16px, 24px, 480px, 1920px);
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: f.fluid(8px, 12px, 480px, 1920px);
 }
 
 .title {
   margin: 0;
   font-family: v.$font-main;
-  font-size: f.to-rem(20);
+  font-size: f.fluid(16px, 20px, 480px, 1920px);
   font-weight: 600;
-  line-height: 1.4;
-  color: #ffffff;
+  line-height: v.$line-height-default;
+  color: v.$color-white;
 }
 
 .description {
   margin: 0;
-  font-size: f.to-rem(14);
-  line-height: 1.5;
+  font-size: f.fluid(12px, 14px, 480px, 1920px);
+  line-height: v.$line-height-default;
   font-weight: 300;
+  color: v.$color-white;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -97,8 +106,8 @@
 }
 
 .date {
-  margin-top: auto;
-  font-size: f.to-rem(12);
+  margin-top: f.to-rem(4);
+  font-size: f.fluid(10px, 12px, 480px, 1920px);
   font-weight: 600;
   color: v.$color-white;
 }

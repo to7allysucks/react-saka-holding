@@ -1,0 +1,103 @@
+@use '@styles/variables' as v;
+@use '@styles/mixins' as m;
+@use '@styles/functions' as f;
+
+.orderSection {
+    @include m.container-padding;
+    padding-top: f.fluid(40px, 80px, 480px, 1920px);
+    padding-bottom: f.fluid(40px, 80px, 480px, 1920px);
+    background-color: #ffffff;
+}
+
+.cardContainer {
+    width: 100%;
+    background: linear-gradient(
+        145deg, 
+        v.$color-accent 0%, 
+        v.$color-accent 50%, 
+        color-mix(in srgb, v.$color-accent, #ffffff 4%) 50%, 
+        color-mix(in srgb, v.$color-accent, #ffffff 4%) 100%
+    );
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: f.fluid(40px, 60px, 480px, 1920px) f.fluid(20px, 80px, 480px, 1920px);
+}
+
+.title {
+    font-weight: 600;
+    line-height: v.$line-height-default;
+    color: v.$color-white;
+    margin-bottom: 16px;
+    font-size: f.fluid(20px, 28px, 480px, 1920px) !important;
+}
+
+.subtitle {
+    font-weight: 300;
+    line-height: v.$line-height-default;
+    color: v.$color-white;
+    margin-bottom: f.fluid(30px, 45px, 480px, 1920px);
+    font-size: f.fluid(14px, 16px, 480px, 1920px);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: f.fluid(12px, 20px, 960px, 1920px);
+    width: 100%;
+    margin-bottom: 24px;
+
+    @include m.tablet {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: none;
+    border-radius: 30px;
+    padding: f.fluid(14px, 18px, 480px, 1920px) f.fluid(20px, 28px, 480px, 1920px);
+    color: v.$color-white;
+    font-size: f.fluid(13px, 15px, 480px, 1920px);
+    width: 100%;
+    max-width: 260px;
+
+    @include m.tablet {
+        max-width: 100%;
+    }
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.25);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.submitBtn {
+    width: 100% !important;
+    max-width: 260px;
+    padding-top: f.fluid(14px, 18px, 480px, 1920px) !important;
+    padding-bottom: f.fluid(14px, 18px, 480px, 1920px) !important;
+    border-radius: 30px !important;
+    font-size: f.fluid(14px, 16px, 480px, 1920px) !important;
+
+    @include m.tablet {
+        max-width: 100% !important;
+    }
+}
+
+.policy {
+    font-size: f.fluid(11px, 13px, 480px, 1920px);
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.2);
+    max-width: 760px;
+    line-height: 1.4;
+}

@@ -53,7 +53,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
                 <nav className={styles.nav}>
                     <ul className={styles.navList}>
-                        <li><NavLink to={ROUTES.HOME} className={styles.navItem} onClick={onClose}>Главная</NavLink></li>
+                        <li><NavLink to={ROUTES.HOME} className={styles.navItem} onClick={onClose} end>Главная</NavLink></li>
                         
                         <li className={`${styles.hasSubmenu} ${isCatalogOpen ? styles.active : ''}`}>
                             <button 
@@ -73,8 +73,17 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
                         <li><NavLink to={ROUTES.ABOUT} className={styles.navItem} onClick={onClose}>О компании</NavLink></li>
                         <li><NavLink to={ROUTES.NEWS} className={styles.navItem} onClick={onClose}>Новости</NavLink></li>
-                        <li><NavLink className={styles.navItem} onClick={onClose}>Доставка и оплата</NavLink></li>
-                        <li><NavLink className={styles.navItem} onClick={onClose}>Контакты</NavLink></li>
+                        <li>
+                            <button 
+                                className={styles.navItem} 
+                                onClick={() => {
+                                    onClose();
+                                }}
+                            >
+                                Доставка и оплата
+                            </button>
+                        </li>
+                        <li><a href="#footer" className={styles.navItem} onClick={onClose}>Контакты</a></li>
                     </ul>
                 </nav>
 
